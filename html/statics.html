@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Public Administration of Dental Health, Health Affairs Directorate in Alexandria, 
+                Egyptian Ministry of Health and Population.">
+
+    <!-- CSS font Awesome files -->
+    <link rel="stylesheet" href="../css/font-awesome.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" id="bootstrapCssFile">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- CSS Master document files -->
+    <link rel="stylesheet" href="../css/main.css" type="text/css" id="styleSheetFile">
+
+    <!-- That file can fix any webkit without adding webkit for all classes -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" href="../svg/portrait-PADH-light.svg" type="image/x-icon">
+
+    <!-- tab title -->
+    <title data-translation="MonStaticInput">Monthly Static Input</title>
+
+</head>
+
+<body>
+    <div id="PADHANavBar"></div>
+
+    <!-- ================ Main Container ================================================= -->
+    <div class="master-color inputTitles">
+        <div class="container">
+            <form class="mobile-padding">
+                <!-- ==== upper Tabs ===================================================== -->
+                <div class="row pt-5 pb-3 g-3">
+                    <div class="col-lg-4 col-md-12">
+                        <label for="medical-district" class="form-label">
+                            <i class="fa-solid fa-asterisk"></i>
+                            <atr data-translation="districts"></atr>
+                        </label>
+                        <select class="form-select" id="medical-district">
+                            <option value[ data-translation="choose" ] selected></option>
+                            <option value[ data-translation="montaza" ]></option>
+                            <option value[ data-translation="east" ]></option>
+                            <option value[ data-translation="middle" ]></option>
+                            <option value[ data-translation="west" ]></option>
+                            <option value[ data-translation="gomrok" ]></option>
+                            <option value[ data-translation="agamy" ]></option>
+                            <option value[ data-translation="amriya" ]></option>
+                            <option value[ data-translation="borg" ]></option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <label for="medical-district" class="form-label">
+                            <i class="fa-solid fa-asterisk"></i>
+                            <atr data-translation="unitName"></atr>
+                        </label>
+                        <select id="medical-district" class="form-select">
+                            <option value[ data-translation="choose" ] selected></option>
+                            <option value[ data-translation="mo_elagia" ]></option>
+                            <option value[ data-translation="mo_mehania" ]></option>
+                            <option value[ data-translation="mo_rahamna" ]></option>
+                            <option value[ data-translation="mo_john" ]></option>
+                            <option value[ data-translation="mo_toson" ]></option>
+                            <option value[ data-translation="mo_mandara" ]></option>
+                            <option value[ data-translation="mo_sidiBishr" ]></option>
+                            <option value[ data-translation="mo_mohsen" ]></option>
+                            <option value[ data-translation="mo_derbala" ]></option>
+                            <option value[ data-translation="mo_qerdahi" ]></option>
+                            <option value[ data-translation="mo_riefia" ]></option>
+                            <option value[ data-translation="mo_amrawy" ]></option>
+                            <option value[ data-translation="mo_aboqirII" ]></option>
+                            <option value[ data-translation="mo_aboqirIII" ]></option>
+
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <label for="medical-district" class="form-label">
+                            <i class="fa-solid fa-asterisk"></i>
+                            <atr data-translation="month"></atr>
+                        </label>
+                        <select id="item-group" class="form-select" aria-label="Default select example">
+                            <option value[ data-translation="choose" ] selected></option>
+                            <option value[ data-translation="jan" ]></option>
+                            <option value[ data-translation="feb" ]></option>
+                            <option value[ data-translation="march" ]></option>
+                            <option value[ data-translation="april" ]></option>
+                            <option value[ data-translation="may" ]></option>
+                            <option value[ data-translation="june" ]></option>
+                            <option value[ data-translation="july" ]></option>
+                            <option value[ data-translation="aug" ]></option>
+                            <option value[ data-translation="sep" ]></option>
+                            <option value[ data-translation="oct" ]></option>
+                            <option value[ data-translation="nov" ]></option>
+                            <option value[ data-translation="dec" ]></option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6 mb-2">
+                        <label for="StaticsYear" class="form-label">
+                            <i class="fa-solid fa-asterisk"></i>
+                            <atr data-translation="year"></atr>
+                        </label>
+                        <input type="text" class="form-control text-center" id="StaticsYear" minlength="4"
+                            maxlength="4">
+                    </div>
+                </div>
+
+
+                <!-- === position titles ================================================= -->
+                <div class="row g-3">
+                    <label for="first-row">
+                        <atr data-translation="totalPatients"></atr>
+                    </label>
+                    <div class="col-lg-4">
+                        <div class="row g-3">
+                            <div class="col-lg-8 col-md-6 col-8">
+                                <p>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <atr data-translation="newPat"></atr>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-4">
+                                <input type="number" class="form-control text-center" id="newPatients"
+                                    onkeyup="getTotalPatients()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row g-3">
+                            <div class="col-lg-8 col-md-6 col-8">
+                                <p>
+                                    <i class="fa-solid fa-water"></i>
+                                    <atr data-translation="freqPat"></atr>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-4">
+                                <input type="number" class="form-control text-center" id="frequentPatients"
+                                    onkeyup="getTotalPatients()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row g-3">
+                            <div class="col-lg-8 col-md-6 col-8">
+                                <div class="form-control total" id="totalPatientsTitle">
+                                    <atr data-translation="totalPat"></atr>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-4">
+                                <div id="totalPatients" type="number" class="form-control total"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === Statics Inputs ================================================== -->
+                <div class="row">
+
+                    <!-- === Oral Surgery ====== -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12 order-md-start">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleRed">
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                    <atr data-translation="oralSurgery"></atr>
+                                </p>
+                            </div>
+
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                    <atr data-translation="primEx"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="pedoExreaction">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                    <atr data-translation="perEx"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="permenantExtraction">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                    <atr data-translation="spare"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="surgicalSpare">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                    <atr data-translation="surgEx"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="surgicalExtraction">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                    <atr data-translation="minSurgery"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="minorSurgery">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === Pedo Restoration ================= -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleBlue">
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="pedo"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="temFill"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="pedoTempFilling">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="amalFill"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="pedoAmalgamFilling">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="compFill"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="pedoCompositeFilling">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="gic"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="pedoGIC">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="pulpVisit"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="pedoPulpotomyVisit">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="pulpFill"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="pedoPulpotomyFilling">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === Adult Restoration ================ -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleRed">
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="operative"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="temFill"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="PermenantTemporary">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="amalFill"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="permenantAmalgam">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="compFill"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="permenantComposite">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="gic"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="permenantGIC">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="pulpVisit"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="RCTVisit">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="pulpFill"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="RCTFilling">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === Periodontics ===================== -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleBlue">
+                                    <i class="fa-solid fa-droplet"></i>
+                                    <atr data-translation="perio"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-droplet"></i>
+                                    <atr data-translation="scaling"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="scaling">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-droplet"></i>
+                                    <atr data-translation="ginProcedures"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="gingivalProcedures">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === Treatments ====================== -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleRed">
+                                    <i class="fa-solid fa-pills"></i>
+                                    <atr data-translation="tablets"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-pills"></i>
+                                    <atr data-translation="tablets"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="drugsTreatment">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === Transition ====================== -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleBlue">
+                                    <i class="fa-solid fa-right-left"></i>
+                                    <atr data-translation="transition"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-right-left"></i>
+                                    <atr data-translation="intTrans"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="internalTransition">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-right-left"></i>
+                                    <atr data-translation="exTrans"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="externalTransition">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === Radiation ======================= -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleRed">
+                                    <i class="fa-solid fa-radiation"></i>
+                                    <atr data-translation="radiology"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-radiation"></i>
+                                    <atr data-translation="periXray"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="periapicalRadiation">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-radiation"></i>
+                                    <atr data-translation="panXray"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="panoramicRadiation">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-radiation"></i>
+                                    <atr data-translation="cbct"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="coneBeamCT">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- === Prosthodontics ================== -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleBlue">
+                                    <i class="fa-solid fa-teeth"></i>
+                                    <atr data-translation="prosthesis"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-teeth"></i>
+                                    <atr data-translation="fullMouth"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="prosFullMouth"
+                                    onkeyup="getTotalProsthodontics()">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-teeth"></i>
+                                    <atr data-translation="sinArch"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="prosSingleArch"
+                                    onkeyup="getTotalProsthodontics()">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-teeth"></i>
+                                    <atr data-translation="partMoreIII"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="prosPartialMoreThanThree"
+                                    onkeyup="getTotalProsthodontics()">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-teeth"></i>
+                                    <atr data-translation="partLessIII"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="prosPartialLessThanThree"
+                                    onkeyup="getTotalProsthodontics()">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-teeth"></i>
+                                    <atr data-translation="repairs"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="prosRepairs"
+                                    onkeyup="getTotalProsthodontics()">
+                            </div>
+                            <div class="col-8">
+                                <div class="form-control total" id="prosTotalTitle">
+                                    <atr data-translation="totalPat"></atr>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div type="number" class="form-control text-center total" id="prosTotal"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- === Others ========================== -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleRed">
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="other"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="s_implant"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="implant">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="s_st"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="ststCrown">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-sliders"></i>
+                                    <atr data-translation="s_ortho"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="orthodontics">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                    <atr data-translation="s_genAnasthesia"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="generalAnasthesia">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-teeth"></i>
+                                    <atr data-translation="s_fixed"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="fixedProsthodontics">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="s_flouride"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="flourideApplication">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="s_pitSeal"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="pitAndFissureSealant">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-tooth"></i>
+                                    <atr data-translation="s_other"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="otherCases">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === health education titles ========================================= -->
+                <div class="row">
+                    <!-- ============================================= First Health Education Groub ============================================= -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleBlue">
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="preg_oralHealth"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <atr data-translation="newPat"></atr>
+                                </p>
+                            </div>
+
+                            <div class="col-4">
+                                <input onkeyup="getTotalPregnant()" id="newPregnant" type="number"
+                                    class="form-control text-center">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-water"></i>
+                                    <atr data-translation="freqPat"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input onkeyup="getTotalPregnant()" id="frequentPregnant" type="number"
+                                    class="form-control text-center">
+                            </div>
+                            <div class="col-8">
+                                <div class="form-control total" id="totalPatientsTitle">
+                                    <atr data-translation="totalPat"></atr>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div id="totalPregnant" class="form-control total"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================= Second Health Education Groub ============================================= -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleBlue">
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="preg_oralHealth"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="preg_healthyG"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="healthyGingiva">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="preg_bleedG"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="bleedingGingiva">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="preg_calc"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="gingivalCalculus">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="preg_healthyT"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="healthyTeeth">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="preg_cariousT"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="cariousTeeth">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="preg_fillT"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="fillingTeeth">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================= Third Health Education Groub ============================================= -->
+                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <p class="inputTitleBlue">
+                                    <i class="fa-solid fa-child"></i>
+                                    <atr data-translation="kid_oralHealth"></atr>
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="kid_delayedT"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="kidsDelayedTeeth">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="kid_healthyT"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="kidsHealthyTeeth">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="kid_cariousT"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="kidsCariousTeeth">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="kid_fillT"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="kidsFilledTeeth">
+                            </div>
+                            <div class="col-8">
+                                <p>
+                                    <i class="fa-solid fa-person-dress"></i>
+                                    <atr data-translation="kid_exT"></atr>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <input type="number" class="form-control text-center" id="kidsExtractedTeeth">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 mb-5"></div>
+                <hr class="mb-4">
+
+                <div class="mb-4 row g-1 justify-content-end">
+                    <button class="btn btn-padha col-md-4 py-2" type="submit" id="submitStaticsToServer">
+                        <i class="fa-solid fa-cloud-arrow-up mr-3"></i>
+                        <atr data-translation="sendStatics"></atr>
+                    </button>
+                </div>
+
+                <div class="successfulSubmit">
+                    <div class="successfulModal">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h5>Uploaded Successfully</h5>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="PADHAFooter"></div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+<div id="PADHAJS"></div>
+<script src="../js/NavBars.js"></script>
+<script src="../js/arabic.js" type="module"></script>
+<script src="../js/main.js"></script>
+
+<script src="../js/statics.js"></script>
+
+</html>

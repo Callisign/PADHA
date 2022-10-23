@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Public Administration of Dental Health, Health Affairs Directorate in Alexandria, 
+                                            Egyptian Ministry of Health and Population.">
+
+    <!-- CSS font Awesome files -->
+    <link rel="stylesheet" href="../css/font-awesome.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" id="bootstrapCssFile">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- CSS Master document files -->
+    <link rel="stylesheet" href="../css/main.css" type="text/css" id="styleSheetFile">
+
+    <!-- That file can fix any webkit without adding webkit for all classes -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" href="../svg/portrait-PADH-light.svg" type="image/x-icon">
+
+    <!-- tab title -->
+    <title data-translation="dentSupplyInput">Dental Supply Input</title>
+
+</head>
+
+<body>
+    <div id="PADHANavBar"></div>
+
+    <main class="container master-color mobile-padding supply">
+        <div class="row pt-5 pb-2">
+            <div class="col-lg-6 col-md-12 mb-2">
+                <label for="medical-district" class="form-label">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <atr data-translation="districts"></atr>
+                </label>
+                <select class="form-select" id="medical-district">
+                    <option value[ data-translation="choose" ] selected></option>
+                    <option value[ data-translation="montaza" ]></option>
+                    <option value[ data-translation="east" ]></option>
+                    <option value[ data-translation="middle" ]></option>
+                    <option value[ data-translation="west" ]></option>
+                    <option value[ data-translation="gomrok" ]></option>
+                    <option value[ data-translation="agamy" ]></option>
+                    <option value[ data-translation="amriya" ]></option>
+                    <option value[ data-translation="borg" ]></option>
+                </select>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6 mb-2">
+                <label for="supMonth" class="form-label">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <atr data-translation="month"></atr>
+                </label>
+                <select id="supMonth" class="form-select" aria-label="Default select example"
+                    onchange="supMonthValid()">
+                    <option value[ data-translation="choose" ] selected></option>
+                    <option value[ data-translation="jan" ]></option>
+                    <option value[ data-translation="feb" ]></option>
+                    <option value[ data-translation="march" ]></option>
+                    <option value[ data-translation="april" ]></option>
+                    <option value[ data-translation="may" ]></option>
+                    <option value[ data-translation="june" ]></option>
+                    <option value[ data-translation="july" ]></option>
+                    <option value[ data-translation="aug" ]></option>
+                    <option value[ data-translation="sep" ]></option>
+                    <option value[ data-translation="oct" ]></option>
+                    <option value[ data-translation="nov" ]></option>
+                    <option value[ data-translation="dec" ]></option>
+                </select>
+                <div id="supMonthValid" class="valid-select"></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+                <label for="supYear" class="form-label">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <atr data-translation="year"></atr>
+                </label>
+                <input type="number" id="supYear" class="form-control text-center" min="2020" max="2100"
+                    onkeyup="supYearValid()">
+                <div id="supYearValid" class="valid-input"></div>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-lg-3 col-md-4 col-12">
+                <label for="supItemGroup" class="form-label">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <atr data-translation="supItemGroup"></atr>
+                </label>
+                <select id="supItemGroup" class="form-select" aria-label="Default select example" required
+                    onchange="supItemGroupValid()">
+                    <option value[ data-translation="choose" ] selected></option>
+                    <option value[ data-translation="supConservative" ]></option>
+                    <option value[ data-translation="supInfection" ]></option>
+                    <option value[ data-translation="supRemovable" ]></option>
+                    <option value[ data-translation="supSurgery" ]></option>
+                    <option value[ data-translation="supRadiology" ]></option>
+                    <option value[ data-translation="supPermenant" ]></option>
+                </select>
+                <div id="supItemGroupValid" class="valid-select"></div>
+            </div>
+            <!--
+           <div class="col-lg-3 col-md-4 col-12">
+                <label for="supItemGroup" class="form-label">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <atr data-translation="supItemGroup"></atr>
+                </label>
+                <select id="supItemGroup" class="form-select" aria-label="Default select example" required
+                    onchange="supItemGroupValid()">
+                    <option value[ data-translation="choose" ] selected></option>
+                    <option value="Devices">Devices</option>
+                    <option value="Instraument">Instraument</option>
+                    <option value="Dental Material">Dental Material</option>
+                    <option value="Infection Control Materials">Infection Control Materials</option>
+                </select>
+                <div id="supItemGroupValid" class="valid-select"></div>
+            </div>
+            <div class="col-lg-5 col-md-8">
+                <label for="supItemLabel" class="form-label">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <atr data-translation="supItemLabel"></atr>
+                </label>
+                <select id="supItemLabel" class="form-select" aria-label="Default select example"
+                    onchange="supItemLabelValid()" disabled required>
+                    <option value[ data-translation="choose" ] selected></option>
+                    <option value="">All</option>
+                    <option value="Devices Amalgamator">Amalgamator</option>
+                    <option value="Devices Cavitron">Cavitron</option>
+                    <option value="Devices High Speed Handpiece">High Speed Handpiece</option>
+                    <option value="Devices Low Speed Handpiece">Low Speed Handpiece</option>
+                    <option value="Instraument K-Files 15-40">K-Files 15-40</option>
+                    <option value="Instraument K-Files 45-80">K-Files 45-80</option>
+                    <option value="Instraument H-Files 15-40">H-Files 15-40</option>
+                    <option value="Instraument H-Files 45-80">H-Files 45-80</option>
+                    <option value="Instraument Mirror">Mirror</option>
+                    <option value="Instraument Scaler">Scaler</option>
+                    <option value="Instraument Excavator">Excavator</option>
+                    <option value="Dental Material Amalgam">Amalgam</option>
+                    <option value="Dental Material Composite">Composite</option>
+                    <option value="Dental Material GIC">GIC</option>
+                    <option value="Dental Material Sealer">Sealer</option>
+                    <option value="Infection Control Materials">All</option>
+                    <option value="Infection Control Materials Latex Gloves">Latex Gloves</option>
+                    <option value="Infection Control Materials Gaune">Gaune</option>
+                    <option value="Infection Control Materials Surgical Mask">Surgical Mask</option>
+                    <option value="Infection Control Materials Highly Effecient Mask N95">Highly Effecient Mask N95
+                    </option>
+                </select>
+                <div id="supItemLabelValid" class="valid-select"></div>
+            </div>-->
+
+            <div class="col-lg-5 col-md-8">
+                <label for="supItemLabel" class="form-label">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <atr data-translation="supItemLabel"></atr>
+                </label>
+                <select id="supItemLabel" class="form-select" aria-label="Default select example"
+                    onchange="supItemLabelValid()" disabled required>
+                    <option value[ data-translation="choose" ] selected></option>
+                    <option value[ data-translation="supFullArch" ]></option>
+                    <option value[ data-translation="supUADenture" ]></option>
+                    <option value[ data-translation="supUPDenture" ]></option>
+                    <option value[ data-translation="supLADenture" ]></option>
+                    <option value[ data-translation="supLPDenture" ]></option>
+                    <!--<option value="">All</option>
+                    <option value="Devices Amalgamator">Amalgamator</option>
+                    <option value="Devices Cavitron">Cavitron</option>
+                    <option value="Devices High Speed Handpiece">High Speed Handpiece</option>
+                    <option value="Devices Low Speed Handpiece">Low Speed Handpiece</option>
+                    <option value="Instraument K-Files 15-40">K-Files 15-40</option>
+                    <option value="Instraument K-Files 45-80">K-Files 45-80</option>
+                    <option value="Instraument H-Files 15-40">H-Files 15-40</option>
+                    <option value="Instraument H-Files 45-80">H-Files 45-80</option>
+                    <option value="Instraument Mirror">Mirror</option>
+                    <option value="Instraument Scaler">Scaler</option>
+                    <option value="Instraument Excavator">Excavator</option>
+                    <option value="Dental Material Amalgam">Amalgam</option>
+                    <option value="Dental Material Composite">Composite</option>
+                    <option value="Dental Material GIC">GIC</option>
+                    <option value="Dental Material Sealer">Sealer</option>
+                    <option value="Infection Control Materials">All</option>
+                    <option value="Infection Control Materials Latex Gloves">Latex Gloves</option>
+                    <option value="Infection Control Materials Gaune">Gaune</option>
+                    <option value="Infection Control Materials Surgical Mask">Surgical Mask</option>
+                    <option value="Infection Control Materials Highly Effecient Mask N95">Highly Effecient Mask N95
+                    </option>-->
+                </select>
+                <div id="supItemLabelValid" class="valid-select"></div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-6">
+                <label for="supType" class="form-label">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <atr data-translation="supItemType"></atr>
+                </label>
+                <select id="supType" class="form-select" aria-label="Default select example" onchange="supTypeValid()">
+                    <option value[ data-translation="choose" ] selected></option>
+                    <option value[ data-translation="unit" ]></option>
+                    <option value[ data-translation="box" ]></option>
+                    <option value[ data-translation="glass" ]></option>
+                    <option value[ data-translation="set" ]></option>
+                    <option value[ data-translation="kit" ]></option>
+                    <option value[ data-translation="roll" ]></option>
+                    <option value[ data-translation="bag" ]></option>
+                    <option value[ data-translation="syringe" ]></option>
+
+                </select>
+                <div id="supTypeValid" class="valid-select"></div>
+
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <label for="supAmount" class="form-label">
+                    <i class="fa-solid fa-asterisk"></i>
+                    <atr data-translation="supItemAmount"></atr>
+                </label>
+                <input type="number" id="supAmount" class="form-control text-center" min="1" max="999" required
+                    onkeyup="supAmountValid()">
+                <div id="supAmountValid" class="valid-input"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+                <button class="btn" id="supAddItem">
+                    <i id="supAddItemIcon" class="fa-solid fa-plus"></i>
+                    <atr data-translation="addItemToChart"></atr>
+                </button>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+                <button class="btn btn-grey" id="supClearItem">
+                    <i class="fa-solid fa-eraser"></i>
+                    <atr data-translation="ClearInputFields"></atr>
+                </button>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12" id="supDeleteAll">
+
+            </div>
+        </div>
+
+        <h5 class="med-table-h5">
+            <atr data-translation="itemYouAdded"></atr>
+        </h5>
+
+        <div class="table-responsive">
+            <table class="table align-middle table-hover" id="SuppliesInTable">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-nowrap">
+                            <atr data-translation="supItemId"></atr>
+                        </th>
+                        <th scope="col" class="text-nowrap">
+                            <atr data-translation="supItemMonth"></atr>
+                        </th>
+                        <th scope="col" class="text-nowrap">
+                            <atr data-translation="supItemYear"></atr>
+                        </th>
+                        <th scope="col" class="text-nowrap">
+                            <atr data-translation="supItemGroup"></atr>
+                        </th>
+                        <th scope="col" class="text-nowrap">
+                            <atr data-translation="supItemLabel"></atr>
+                        </th>
+                        <th scope="col" class="text-nowrap">
+                            <atr data-translation="supItemTypeTable"></atr>
+                        </th>
+                        <th scope="col" class="text-nowrap">
+                            <atr data-translation="supItemAmount"></atr>
+                        </th>
+                        <th scope="col" class="text-nowrap">
+                            <atr data-translation="supItemEdit"></atr>
+                        </th>
+                        <th scope="col" class="text-nowrap">
+                            <atr data-translation="supItemDelete"></atr>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody id="tbodySupply">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="confirmInputs"></div>
+    </main>
+
+    <div id="configModal" class="config-modal">
+        <div class="config-modal-box">
+            <h2><i class="fa-solid fa-trash-can"></i>
+                <atr data-translation="deleteAllItems"></atr>
+            </h2>
+            <h6>
+                <atr data-translation="supItemSureDeleteAll"></atr>
+            </h6>
+            <p><i class="fa-solid fa-ban"></i>
+                <atr data-translation="supItemSureDeleteAllII"></atr>
+            </p>
+            <div class="row g-3 buttons">
+                <div class="col-lg-6 justify-content-start">
+                    <button onclick="modalDelete()" class="btn btn-red">
+                        <i class="fa-solid fa-trash"></i>
+                        <atr data-translation="supItemDelete"></atr>
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <button onclick="modalCancel()" id="modalCancel" class="btn btn-grey">
+                        <i class="fa-solid fa-xmark"></i>
+                        <atr data-translation="supItemCancel"></atr>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="configModalItem" class="config-modal">
+        <div class="config-modal-box">
+            <h2><i class="fa-solid fa-trash-can"></i>Delete Item</h2>
+            <h6>Are you sure you want to delete this ?
+                <atr data-translation="supItemSureDeleteItem"></atr>
+            </h6>
+            <p><i class="fa-solid fa-ban"></i>You will Lose All Item Data</p>
+            <div class="row g-3 buttons">
+                <div class="col-lg-6 justify-content-start">
+                    <button onclick="modalDeleteItem()" class="btn btn-red">
+                        <i class="fa-solid fa-trash"></i>
+                        <atr data-translation="supItemDelete"></atr>
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <button onclick="modalCancel()" class="btn btn-grey">
+                        <i class="fa-solid fa-xmark"></i>
+                        <atr data-translation="supItemCancel"></atr>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="PADHAFooter"></div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+<div id="PADHAJS"></div>
+
+<script src="../js/search.js"></script>
+<script src="../js/NavBars.js"></script>
+<script src="../js/arabic.js" type="module"></script>
+<script src="../js/main.js"></script>
+<script src="../js/medSupIn.js"></script>
+
+</html>

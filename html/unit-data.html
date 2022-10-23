@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Public Administration of Dental Health, Health Affairs Directorate in Alexandria, 
+                Egyptian Ministry of Health and Population.">
+
+    <!-- CSS font Awesome files -->
+    <link rel="stylesheet" href="../css/font-awesome.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" id="bootstrapCssFile">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- CSS Master document files -->
+    <link rel="stylesheet" href="../css/main.css" type="text/css" id="styleSheetFile">
+
+    <!-- That file can fix any webkit without adding webkit for all classes -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" href="../svg/portrait-PADH-light.svg" type="image/x-icon">
+
+    <!-- tab title -->
+    <title data-translation="unitData">Unit Data</title>
+
+</head>
+
+
+<body>
+
+    <div id="PADHANavBar"></div>
+
+    <!-- ============================================= Main Container ============================================= -->
+    <div class="master-color">
+        <div class="container">
+            <main class="mobile-padding">
+                <!-- ============================================= Search bar ============================================= -->
+                <div class="row pt-5 pb-3 g-3">
+
+                    <div class="col-lg-4 col-md-12">
+                        <label for="medical-district" class="form-label"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="10" height="10" fill="red" class="bi bi-asterisk align-middle"
+                                viewbox="0 0 16 16">
+                                <path
+                                    d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                            </svg>Medical District</label>
+                        <select id="medical-district" class="form-select">
+                            <option value="">Choose ...</option>
+                            <option>Al Montaza Medical District</option>
+                            <option>East Medical District</option>
+                            <option>Middle Medical District</option>
+                            <option>West Medical District</option>
+                            <option>Al Gomrok Medical District</option>
+                            <option>Al Agamy Medical District</option>
+                            <option>Al Amriya Medical District</option>
+                            <option>Borg Al Arab Medical District</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <label for="medical-district" class="form-label"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="10" height="10" fill="red" class="bi bi-asterisk align-middle"
+                                viewbox="0 0 16 16">
+                                <path
+                                    d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                            </svg>Unit Tilte</label>
+                        <select id="medical-district" class="form-select">
+                            <option value="">Choose ...</option>
+                            <option>Al Montaza Medical District</option>
+                            <option>East Medical District</option>
+                            <option>Middle Medical District</option>
+                            <option>West Medical District</option>
+                            <option>Al Gomrok Medical District</option>
+                            <option>Al Agamy Medical District</option>
+                            <option>Al Amriya Medical District</option>
+                            <option>Borg Al Arab Medical District</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <label for=" ser-type" class="form-label">Unit Type</label>
+                        <input type="text" class="form-control" id="unitType" disabled>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <label class="form-label text-white">Unit Type</label>
+                        <button class="form-control btn btn-padha" id="activateEdit" onclick="activateEdit()"><i
+                                class="fa-solid fa-pen-to-square"></i>Edit</button>
+                    </div>
+                    <hr class="my-4">
+                </div>
+
+                <!-- ============================================= Unit Data position titles ============================================= -->
+                <div class="row pb-3 g-3 unitDataLabelsIcon">
+
+                    <!-- ============================================= 1st row ============================================= -->
+                    <label class="d-block d-lg-none d-xs-block">
+                        <i class="fa-solid fa-user-tag"></i>Unit Manager</label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-address-card"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Unit Manager">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <input type="text" class="form-control" disabled id="unitManager" value="Alaa Khater">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled id="unitManagerPhone" value="01119669608">
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none d-xs-block my-3"></div>
+
+                    <!-- ================ Dental Dep Chairman ============================== -->
+                    <label class="d-block d-lg-none d-xs-block"><i class="fa-solid fa-user-tag"></i>Dental Dep
+                        Chairman</label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-tooth"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Dental Dep Chairman">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <input type="text" class="form-control" id="denChairman" disabled value="Mohammed Abaas">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled id="denChairmanPhone" value="01117896565">
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none d-xs-block my-3"></div>
+
+                    <!-- ================ prosthesis row =================================== -->
+                    <label class="d-block d-lg-none d-xs-block"><i class="fa-solid fa-user-tag"></i>Prosthodontics
+                        Chairman</label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-teeth"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Prosthodontics Chairman">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <input type="text" class="form-control" disabled id="prosthChairman" value="Mohammed Abaas">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled id="prosthChairmanPhone"
+                                value="01117896565">
+                        </div>
+                    </div>
+
+                    <!-- ============================================= separator row ============================================= -->
+                    <div class="d-block d-lg-none d-xs-block my-3"></div>
+
+                    <!-- ============================================= 3rd row ============================================= -->
+                    <label class="d-block d-lg-none d-xs-block"><i class="fa-solid fa-user-tag"></i>Maintenance
+                        File</label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="input-group">
+                            <div id="third-row" class="input-group-text">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Maintenance File Admin">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <input type="text" class="form-control" id="maintenanceAdmin" disabled value="Mohammed Abaas">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled id="maintenanceAdminPhone"
+                                value="01118656565">
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none d-xs-block my-3"></div>
+
+                    <!-- ==================== Dental Department Power ============================= -->
+                    <label class="d-block d-lg-none d-xs-block"><i class="fa-solid fa-user-tag"></i>Dental
+                        Department
+                        Power</label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Man Power Admin">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <input type="text" class="form-control" disabled id="manPowerAdmin" value="Islam Gaber">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled id="manPowerAdminPhone"
+                                value="01008656565">
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none d-xs-block my-3"></div>
+
+                    <!-- =================== Continous Education ================================ -->
+                    <label class="d-block d-lg-none d-xs-block"><i class="fa-solid fa-user-tag"></i>Continous
+                        Education</label>
+                    <div id="fifth-row" class="col-lg-3 col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Continous Education Admin">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <input type="text" class="form-control" disabled id="conEduAdmin" value="Nahid Saleh">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled id="conEduAdminPhone" value="01118656565">
+                        </div>
+                    </div>
+
+                    <!-- ============================================= separator row ============================================= -->
+                    <div class="mt-4"></div>
+
+                    <!-- ============================================= Quality ============================================= -->
+                    <label class="d-block d-lg-none d-xs-block"><i class="fa-solid fa-user-tag"></i>Quality</label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class=""
+                                    viewbox="0 0 16 16">
+                                    <path
+                                        d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
+                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                                </svg>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Quality File Admin">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <input type="text" class="form-control" disabled id="qulityAdmin" value="Noha Al Tokhy">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled id="qulityAdminPhone" value="01118334308">
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-none d-xs-block my-3"></div>
+
+                    <!-- ========================= Infection Control ======================================= -->
+                    <label class="d-block d-lg-none d-xs-block"><i class="fa-solid fa-user-tag"></i>Infection
+                        Control</label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <input type="text" class="form-control" id="autoSizingInputGroup" disabled
+                                value="Infection Control Admin">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <input type="text" class="form-control" disabled id="ICAdmin" value="Abeer Refaie">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled value="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <input type="text" class="form-control" disabled id="ICAdminPhone" value="01118369608">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================= Unit Data items titles ============================================= -->
+                <div class="row">
+
+
+
+                    <!-- ============================================= Left Groub ============================================= -->
+                    <div class="col-lg-6 col-md-12 order-md-start">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <input disabled type="text" class="form-control text-center btn-primary"
+                                    value="Dental Man Power">
+                            </div>
+                            <!-- ============================================= Title Bar ============================================= -->
+                            <div class="col-md-6 d-none d-md-block">
+                                <input disabled type="text" class="form-control text-center text-white btn-dark"
+                                    value="Status / Count">
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <input disabled type="text" class="form-control text-center btn-secondary" value="Dent">
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <input disabled type="text" class="form-control text-center btn-secondary" value="Tech">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= Full Power ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Full Power">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="dentFullPower">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="techFullPower">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= Male Power ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div id="male-power" class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-mars"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Male Power">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <input type="number" class="form-control text-center" disabled id="dentMalePower">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <input type="number" class="form-control text-center" disabled id="techMalePower">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= Female Power ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-venus"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Female Power">
+                                </div>
+                            </div>
+                            <div class="col-sm- col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <input type="number" class="form-control text-center" disabled id="dentFemalePower"
+                                    value="">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <input type="number" class="form-control text-center" disabled id="techFemalePower"
+                                    value="">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= Full Time ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-battery-full"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Full Time">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-6 col-sm-6">
+                                <input type="number" class="form-control text-center" disabled id="dentFullTime">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="techFullTime">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= Part Time ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-battery-half"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Part Time">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="dentPartTime">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="techPartTime">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-sm-block"></div>
+
+                            <!-- ============================================= Mandatory Vacations ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-calendar-check"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Mandatory Vacations">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled
+                                    id="dentMandatoryVacation">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled
+                                    id="techMandatoryVacation">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-sm-block"></div>
+
+                            <!-- ============================================= Unmandatory Vacations ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Unmandatory Vacations">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled
+                                    id="dentUnMandatoryVacation">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled
+                                    id="techUnMandatoryVacation">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-sm-block"></div>
+
+                            <!-- ============================================= Bachelor Degree ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-user-graduate"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Bachelor Degree">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="dentBachelorDegree">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="techBachelorDegree">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-sm-block"></div>
+
+                            <!-- ============================================= Professional Diploma ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Professional Diploma">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="dentDiploma">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="techDiploma">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-sm-block"></div>
+
+                            <!-- ============================================= Master ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Master Degree">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="dentMaster">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="techMaster">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-sm-block"></div>
+
+                            <!-- ============================================= Fellowship Diploma ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Fellowship">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="dentFellowship">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="techFellowship">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-sm-block"></div>
+
+                            <!-- ============================================= PhD ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="PhD">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Dentist">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="dentPhD">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control" value="Technician">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="techPhD">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-sm-block"></div>
+
+                            <div class="mt-4"></div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- ============================================= Right Group ============================================= -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="row pt-5 g-3">
+                            <div class="col-md-12">
+                                <input disabled type="text" class="form-control text-center btn-primary"
+                                    value="Dental Clinic Custody">
+                            </div>
+                            <!-- ============================================= Title Bar ============================================= -->
+                            <div class="col-md-6 d-none d-md-block">
+                                <input disabled type="text" class="form-control text-center btn-dark"
+                                    value="Item / Validation">
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <input disabled type="text" class="form-control text-center btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 d-none d-md-block">
+                                <input disabled type="text" class="form-control text-center btn-danger" value="Invalid">
+                            </div>
+
+                            <!-- ============================================= Dental Clinic ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Dental Clinic">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validClinic">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidClinic">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= Dental Unit ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Dental Unit">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validUnit">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidUnit">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Compressor ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Compressor">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validCompressor">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidCompressor">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= High Speed Handpiece ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Highspeed Handpiece">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validHSHP">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidHSHP">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Lowspeed Handpiece ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Lowspeed Handpiece">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validLSHP">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidLSHP">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Endo Motor ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Rotary Endo Motor">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validRotary">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidRotary">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Periapical X-ray ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-radiation"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Periapical X-ray">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validPeriapical">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidPeriapical">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= Panoramic X-ray ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-radiation"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Panoramic X-ray">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validPanorama">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidPanorama">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= CBCT ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-radiation"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Cone Beam CT">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validCBCT">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidCBCT">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= Dark Box ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-radiation"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Dark Box">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validDarkBox">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidDarkBox">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Ultrasonic Scaler ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Ultrasonic Scaler">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validCavitron">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidCavitron">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Amalgamator ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Amalgamator">
+                                </div>
+                            </div>
+                            <div class=" col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validAmalgamator">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidAmalgamator">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Light Cure Device ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Light Cure Device">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validLightCure">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidLightCure">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Syringe ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Syringe">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validSyringe">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidSyringe">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Diagnostic Mirror ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Diagnostic Mirror">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validMirror">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidMirror">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <!-- ============================================= Diagnostic Probe ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Diagnostic Probe">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validProbe">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidProbe">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+
+                            <!-- ============================================= Diagnostic Tweezer ============================================= -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-group">
+                                    <div class="input-group-text">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="Diagnostic Tweezer">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-success" value="Valid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="validTweezer">
+                            </div>
+                            <div class="col-sm-6 col-6 d-block d-md-none">
+                                <input disabled type="text" class="form-control btn-danger" value="Invalid">
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-6">
+                                <input type="number" class="form-control text-center" disabled id="invalidTweezer">
+                            </div>
+                            <div class="mt-4 d-block d-md-none d-xs-block"></div>
+
+                            <div id="UnitDataConfirmEdit">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="PADHAFooter"></div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+<div id="PADHAJS"></div>
+<script src="../js/NavBars.js"></script>
+<script src="../js/arabic.js" type="module"></script>
+<script src="../js/main.js"></script>
+
+<script src="../js/unitData.js"></script>
+
+</html>

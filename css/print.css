@@ -1,0 +1,14 @@
+@media print {
+    #aboutus{
+        display: none;
+    }
+    #copyrights{
+        display: none; 
+    }
+    #hidden-navbar{
+        display: none;   
+    }
+    #sticky-navbar{
+        display: none;   
+    }
+}

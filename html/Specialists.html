@@ -1,0 +1,2622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Public Administration of Dental Health, Health Affairs Directorate in Alexandria, 
+                Egyptian Ministry of Health and Population.">
+
+    <!-- CSS font Awesome files -->
+    <link rel="stylesheet" href="../css/font-awesome.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" id="bootstrapCssFile">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- CSS Master document files -->
+    <link rel="stylesheet" href="../css/main.css" type="text/css" id="styleSheetFile">
+
+    <!-- That file can fix any webkit without adding webkit for all classes -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" href="../svg/portrait-PADH-light.svg" type="image/x-icon">
+
+    <!-- tab title -->
+    <title data-translation="specialists">Specialists</title>
+
+</head>
+
+<body>
+    <div id="PADHANavBar"></div>
+
+    <!-- ============================================= Unit Cards ============================================= -->
+    <div class="container mobile-padding">
+        <nav class="pager">
+            <h3><i class="fas fa-caret-right"></i>
+                <atr data-translation="specialists"></atr>
+            </h3>
+            <ul class="pager-items">
+                <li class="navpager-item"><a href="../html/index.html">
+                        <atr data-translation="home"></atr>
+                    </a></li>
+                <li class="navpager-arrow"><i class="fas fa-angle-double-right page-arrow-back"></i></li>
+            </ul>
+            <ul>
+                <li class="navpager-item current" aria-current="page">
+                    <atr data-translation="specialists"></atr>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container mobile-padding">
+        <div class="row g-4">
+            <div class="col-3 d-none d-lg-block">
+                <div class="specialities-sidebar-list">
+                    <h5>
+                        <atr data-translation="forMore"></atr>
+                    </h5>
+                    <a href="../html/message.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="vision"></atr>
+                    </a>
+                    <a href="../html/team.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="team"></atr>
+                    </a>
+                    <a href="../html/contact.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="contact"></atr>
+                    </a>
+                    <a href="../html/terms.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="terms"></atr>
+                    </a>
+                    <a href="../html/privacy.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="privacy"></atr>
+                    </a>
+                    <a href="../html/Specialists.html"
+                        class="specialities-sidebar-item specialities-sidebar-item-activated">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="specialists"></atr>
+                    </a>
+                    <a href="../html/dental-specialities.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="specialities"></atr>
+                    </a>
+                    <a href="../html/media.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="media"></atr>
+                    </a>
+                    <a href="../html/units-and-hospitals.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="dentalUnits"></atr>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class="col-lg-9">
+                <div id="myBtnContainer">
+                    <button class="specialityBtn active" onclick="filterSelection('all')">
+                        <i class="fa-solid fa-list-check mr-2"></i>
+                        <atr data-translation="downloadAll"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('operative')">
+                        <atr data-translation="operative"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('prosthesis')">
+                        <atr data-translation="prosthesis"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('perio')">
+                        <atr data-translation="perio"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('pedo')">
+                        <atr data-translation="pedo"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('endo')">
+                        <atr data-translation="endo"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('ortho')">
+                        <atr data-translation="ortho"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('fixed')">
+                        <atr data-translation="fixedProsth"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('implant')">
+                        <atr data-translation="implant"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('pathology')">
+                        <atr data-translation="pathology"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('oralSurgery')">
+                        <atr data-translation="oralSurgery"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('infectionCotrol')">
+                        <atr data-translation="infectionCotrol"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('hosMan')">
+                        <atr data-translation="hosMan"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('publicHealth')">
+                        <atr data-translation="publicHealth"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('quality')">
+                        <atr data-translation="quality"></atr>
+                    </button>
+
+
+
+                    <div id="perioFilter" onclick="filterSelection('perio')"></div>
+                    <div id="pedoFilter" onclick="filterSelection('pedo')"></div>
+                    <div id="pathologyFilter" onclick="filterSelection('pathology')"></div>
+                    <div id="fixedFilter" onclick="filterSelection('fixed')"></div>
+                    <div id="endoFilter" onclick="filterSelection('endo')"></div>
+                    <div id="orthoFilter" onclick="filterSelection('ortho')"></div>
+                    <div id="operativeFilter" onclick="filterSelection('operative')"></div>
+                    <div id="prosthesisFilter" onclick="filterSelection('prosthesis')"></div>
+                    <div id="infectionCotrolFilter" onclick="filterSelection('infectionCotrol')"></div>
+                    <div id="hosManFilter" onclick="filterSelection('hosMan')"></div>
+                    <div id="pedoFilter" onclick="filterSelection('pedo')"></div>
+                    <div id="maxilloFilter" onclick="filterSelection('maxillo')"></div>
+                    <div id="implantFilter" onclick="filterSelection('implant')"></div>
+                    <div id="radiologyFilter" onclick="filterSelection('radiology')"></div>
+                    <div id="publicHealthFilter" onclick="filterSelection('publicHealth')"></div>
+                    <div id="qualityFilter" onclick="filterSelection('Squality')"></div>
+                    <div id="implantFilter" onclick="filterSelection('Simplant')"></div>
+
+
+                    <div id="adrcFilter" onclick="filterSelection('adrc')"></div>
+                    <div id="mbdcFilter" onclick="filterSelection('mbdc')"></div>
+                    <div id="aboqirFilter" onclick="filterSelection('aboqir')"></div>
+                    <div id="sadrMamoraFilter" onclick="filterSelection('sadrMamora')"></div>
+                    <div id="alramlKidsFilter" onclick="filterSelection('alramlKids')"></div>
+                    <div id="alhomieatFilter" onclick="filterSelection('alhomieat')"></div>
+                    <div id="alramadFilter" onclick="filterSelection('alramad')"></div>
+                    <div id="fawzyMoazFilter" onclick="filterSelection('fawzyMoaz')"></div>
+                    <div id="algomhoriaFilter" onclick="filterSelection('algomhoria')"></div>
+                    <div id="alanfoshieKidsFilter" onclick="filterSelection('alanfoshieKids')"></div>
+                    <div id="rasaltinFilter" onclick="filterSelection('rasaltin')"></div>
+                    <div id="gamalHamadaFilter" onclick="filterSelection('gamalHamada')"></div>
+                    <div id="alamriyaHospitalFilter" onclick="filterSelection('alamriyaHospital')"></div>
+                    <div id="borgAlarabFilter" onclick="filterSelection('borgAlarab')"></div>
+
+                </div>
+
+                <div class="special">
+
+                    <div class="specialityFilter pathology adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pathology_HalaSalah"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pathology"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pathology ">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pathology_AhmadMoharram"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pathology"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_matar"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="specialityFilter perio adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_AymanShousha"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_DaniaSaleh"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_GhadaReda"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_SaharIbrahim"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_ShimaaEzzat"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perioAbdollatif"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_MohamedHelmy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_MarwaGebril"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_MonaElMahdy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_TarekFoad"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_SilviaFarid"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio aboqir">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_MahmoudHassan"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="aboQir"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter perio alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="perio_HebaAwad"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="perio"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="specialityFilter fixed adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_HananHussien"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter fixed adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_KamieliaSabry"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter fixed adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_MahinourYoursi"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter fixed adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_MoMogahid"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter fixed adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_MostafaHassan"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter fixed adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_NouhaSalah"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter fixed alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_SamarFarag"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter fixed alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_LamiaaHelmi"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter fixed east_abisII">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_AhmedYousse"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_abisII"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter fixed east_smoha">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="fixed_HasanFahmy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="fixedProsth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_smoha"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Endodontics-->
+                    <div class="specialityFilter endo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="endo_AliaaRefaat"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="endo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter endo mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="endo_RiemWael"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="endo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter endo mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="endo_MoAbdelfattah"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="endo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter endo mo_mandara">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="endo_ShimaaAwad"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="endo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mo_mandara"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter endo mo_derbala">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="endo_NirmienNabil"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="endo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mo_derbala"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter endo">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="endo_OmarElAzab"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="endo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="borg_Village18"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter endo alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="endo_HalaFarouk"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="endo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter endo">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="endo_MoDiab"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="endo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_bakous"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter endo">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="endo_Jaklien"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="endo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_sanstefano"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Orthodontics-->
+                    <div class="specialityFilter ortho adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="ortho_RaniaAmin"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="ortho"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter ortho adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="ortho_NirminMohanad"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="ortho"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter ortho mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="ortho_Bosin"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="ortho"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Operative Dentistry-->
+                    <div class="specialityFilter operative adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_OmniaFawzy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_RandalElshafey"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_SherienBahnasy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_NirminAlsharief"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_HagarMekkawy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_AlaaEltaweel"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_OmniaAlalfy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_SalyNazzir"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_HebaAlZieny"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative rasaltin">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_BasmaMourad"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="rasaltin"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_DinaMagdy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="gomrok_gomrok"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_MaramHasan"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="gomrok_monaiier"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_YousraHussien"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mo_sidiBishr"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_BervinSharaf"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_matar"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_LielaFaiyd"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_bakous"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_SamarGamal"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_sanstefano"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_NisrinHarhash"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_smoha"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter operative algomhoria">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="op_BasantKhalil"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="operative"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="algomhoria"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Rempvable Prosthesis-->
+                    <div class="specialityFilter prosthesis adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_RaniaAbdullah"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_FatenHelmy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_YasmineAli"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_HananAbdelhamid"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_MostafaElkomy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_SaharKamal"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="amria_Nasriya"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_MoElbaradey"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mo_riefia"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_GhadaTawfiq"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mo_amrawy"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_NirminSehly"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="borg_MC"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_HagarMostafa"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="borg_MC"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_TahanyQadieb"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_JailanAhmed"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_SelviaSamy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_AhmedZakaria"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_sanstefano"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_JihanAli"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_sanstefano"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis algomhoria">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_ShamsAlGhorob"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="algomhoria"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_ImanIbrahim"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="west"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis alramad">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_MarwaAbdelbaset"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramad"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_NadaAlaa"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mid_abisX"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter prosthesis">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="prosth_HalaAbdelSalam"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="prosthesis"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mid_abisVIII"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Hospital Managment-->
+                    <div class="specialityFilter hosMan mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="hosMan_AmalNagy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="hosMan"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter hosMan mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="hosMan_ImanAbdelMonem"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="hosMan"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter hosMan">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="hosMan_MinaAdel"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="hosMan"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="amria_Nasriya"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter hosMan">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="hosMan_BassantAlGharabawy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="hosMan"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="amria_Hawariya"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter hosMan">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="hosMan_MohamedWael"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="hosMan"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="amria_Sanad"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter hosMan">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="hosMan_WalaaHasan"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="hosMan"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="sadrMamora"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter hosMan">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="hosMan_FarahShazly"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="hosMan"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_abisI"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter hosMan">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="hosMan_IsraaAbdelHady"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="hosMan"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mid_abisVII"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Infection Control-->
+                    <div class="specialityFilter infectionCotrol">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="inf_OlaAbdelrahim"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="infectionCotrol"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="directorate"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter infectionCotrol adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="inf_RababGalal"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="infectionCotrol"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter infectionCotrol adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="inf_SamarMansour"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="infectionCotrol"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter infectionCotrol mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="inf_DoniaSamir"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="infectionCotrol"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter infectionCotrol alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="inf_HananHussien"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="infectionCotrol"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter infectionCotrol">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="inf_SaraNahhas"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="infectionCotrol"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter infectionCotrol">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="inf_ManarHasan"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="infectionCotrol"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_bakous"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter infectionCotrol">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="inf_AmanyIsmaiel"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="infectionCotrol"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mid_moharrambiek"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Implant-->
+                    <div class="specialityFilter implant adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="implant_MahmoudGamal"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="implant"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter implant adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="implant_MahmoudAbdelsattar"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="implant"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter implant">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="implant_MahmoudGabr"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="implant"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="borg_ِAboZahra"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter implant">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="implant_ImanShady"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="implant"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="west_Karantiena"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Public Health-->
+                    <div class="specialityFilter publicHealth">
+                        <div class="specialities-pic">
+                            <img src="../Images/publicHealth_Inas.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_InasAlHussieny"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="directorate"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_AmalRamadan"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_SohairZaied"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_MonaDesoky"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_MeriamSaad"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_AlShaimaaOmar"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_SherihaIbrahim"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_GhadaNabil"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_ImanAlghannam"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="gomrok_monaiier"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_OlaIbrahim"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mo_amrawy"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_NivienHelmy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_IsraaSoliman"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_matar"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_RaniaSalah"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_smoha"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_MariamAdly"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter publicHealth">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pH_AlShaimaaAtia"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="publicHealth"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mid_hadaraqebli"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_AmiraFathi"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar.png" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_GamalElDien"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_DaliaOsama"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_DinaAlShafey"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_RaniaAlshweikh"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_ShahendaSeliem"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_ShahendaMostafa"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_HagarYousry"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_HebaAlDesoky"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_Wasiema"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo adrc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_YoumnaMaged"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="adrc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_OmniaGaber"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_AmiraGaber"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_RihamHassan"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_AbeerMenhaly"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo mbdc">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_NohaYousry"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mbdc"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo sadrMamora">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_BasmaRoshdy"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="sadrMamora"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_SaharSharawa"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mo_amrawy"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo alramlKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_DinaAlDesoky"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alramlKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_KarimNabil"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="east_sanstefano"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_MonaZaghlol"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="mid_hadaraqebli"></atr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="specialityFilter pedo alanfoshieKids">
+                        <div class="specialities-pic">
+                            <img src="../Images/avatar-female.jpg" alt="">
+                            <i class="fa-solid fa-graduation-cap speciality-enter"></i>
+                        </div>
+                        <div class="specialities-name">
+                            <h6>
+                                <atr data-translation="pedo_SaraAlhangour"></atr>
+                            </h6>
+                            <h5>
+                                <atr data-translation="specialist"></atr>
+                                <atr data-translation="pedo"></atr>
+                            </h5>
+                            <p>
+                                <atr data-translation="alanfoshieKids"></atr>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="PADHAFooter"></div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+<div id="PADHAJS"></div>
+
+<script src="../js/NavBars.js"></script>
+<script src="../js/arabic.js" type="module"></script>
+<script src="../js/main.js"></script>
+
+<script src="../js/specialists.js"></script>
+
+</html>

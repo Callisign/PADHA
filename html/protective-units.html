@@ -1,0 +1,2716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Public Administration of Dental Health, Health Affairs Directorate in Alexandria, 
+        Egyptian Ministry of Health and Population.">
+
+    <!-- CSS font Awesome files -->
+    <link rel="stylesheet" href="../css/font-awesome.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" id="bootstrapCssFile">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- CSS Master document files -->
+    <link rel="stylesheet" href="../css/main.css" type="text/css" id="styleSheetFile">
+
+    <!-- That file can fix any webkit without adding webkit for all classes -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" href="../svg/portrait-PADH-light.svg" type="image/x-icon">
+
+    <!-- tab title -->
+    <title data-translation="protUnits">Protective Units</title>
+
+</head>
+
+<body>
+
+    <div id="PADHANavBar"></div>
+
+    <div class="container mobile-padding">
+        <nav class="pager">
+            <h3><i class="fas fa-caret-right"></i>
+                <atr data-translation="hospitals"></atr>
+            </h3>
+            <ul class="pager-items">
+                <li class="navpager-item"><a href="../html/index.html">
+                        <atr data-translation="home"></atr>
+                    </a></li>
+                <li class="navpager-arrow"><i class="fas fa-angle-double-right page-arrow-back"></i>
+                </li>
+            </ul>
+            <ul>
+                <li class="navpager-item"><a href="../html/units-and-hospitals.html">
+                        <atr data-translation="dentalUnits"></atr>
+                    </a></li>
+                <li class="navpager-arrow"><i class="fas fa-angle-double-right page-arrow-back"></i>
+                </li>
+            </ul>
+            <ul>
+                <li class="navpager-item current">
+                    <atr data-translation="protUnits"></atr>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="unit-card-space"></div>
+
+    <div class="container mobile-padding">
+        <div class="row g-5">
+            <div class="col-3 d-none d-lg-block">
+                <div class="specialities-sidebar-list">
+                    <h5>
+                        <atr data-translation="forMore"></atr>
+                    </h5>
+                    <a href="../html/centers.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="centers"></atr>
+                    </a>
+                    <a href="../html/hospitals.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="hospitals"></atr>
+                    </a>
+                    <a href="../html/theraputic-units.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="theraUnits"></atr>
+                    </a>
+                    <a href="../html/protective-units.html"
+                        class="specialities-sidebar-item specialities-sidebar-item-activated">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <atr data-translation="protUnits"></atr>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-12">
+                <div class="hospital-manage">
+                    <h5 class="master-color">
+                        <i class="fas fa-hospital"></i>
+                        <atr data-translation="protUnits"></atr>
+                    </h5>
+                    <div class="specialities-title">
+                        <p>
+                            <atr data-translation="protectiveUnitCount"></atr>
+                        </p>
+                        <p class="red-color">
+                            <atr data-translation="primaryHealthCareLevel"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="protectiveUnitsContent"></atr>
+                        </p>
+                    </div>
+                </div>
+                <div id="myBtnContainer">
+                    <button class="specialityBtn active" onclick="filterSelection('all')">
+                        <i class="fa-solid fa-list-check mr-2"></i>
+                        <atr data-translation="downloadAll"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('montaza')">
+                        <atr data-translation="montaza"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('east')">
+                        <atr data-translation="east"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('middle')">
+                        <atr data-translation="middle"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('west')">
+                        <atr data-translation="west"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('gomrok')">
+                        <atr data-translation="gomrok"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('agamy')">
+                        <atr data-translation="agamy"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('amriya')">
+                        <atr data-translation="amriya"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('borg')">
+                        <atr data-translation="borg"></atr>
+                    </button>
+                </div>
+
+                <div class="mb-5 specialityFilter montaza">
+                    <div class="row g-3">
+                        <div class="specialities-title mb-2">
+                            <h4><i class="fa-solid fa-flag"></i>
+                                <atr data-translation="montaza"></atr>
+                            </h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_rahamna"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_rahamnaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/vsF27B1FQpwXXG1H6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_toson"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_tosonHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/hBV7bLFdpSpfiydS7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_john"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_johnHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/Se1wts7B3P9gyU6L8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_mandara"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_mandaraHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/EaaiMK8P1hnRLR9E8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_sidiBishr"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_sidiBishrHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/G3WrZnzWKsMneMcUA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_mohsen"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_mohsenHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/inpawyVAQRXKZWH2A">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_derbala"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_derbalaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/G3WrZnzWKsMneMcUA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_qerdahi"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_qerdahiHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/8EgJZfgYCY5uV8Nv9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_riefia"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_riefiaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/uSPXXQHakBzsmmoQ8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_amrawy"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="secondaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_amrawyHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/vswYbnW7gsjXZ6AP6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_aboqirII"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_aboqirIIHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/uUczqWT1LnBAybBR9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mo_aboqirIII"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="montaza"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mo_aboqirIIIHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/7uvdPQccYJnsaU7B8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter east">
+                    <div class="row g-3">
+                        <div class="specialities-title mb-0">
+                            <h4><i class="fa-solid fa-flag"></i>
+                                <atr data-translation="east"></atr>
+                            </h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_abisI"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_abisIHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/xGvqVVvCq5yJGFmm7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_abisII"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_abisIIHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/x2dqVBjfraWnrKbG9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_alsoyouf"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_alsoyoufHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/j4mp263o641jW1zBA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_qalaa"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_qalaaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/eRCVKJNGwDsBjHrE8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_matar"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_matarHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/uBtHiLEipEhAUPqP6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_bakous"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_bakousHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/nE4NbnyKxkTWAFoq5">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_hagarnawatia"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_hagarnawatiaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/AooFyPQMZ4VRj3Kw6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_dannaqadema"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_dannaqademaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/TKDoZ8xgoVNqXp9H9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_dannawatania"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_dannawataniaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/G1FwXohn5xPCD66B8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_sanstefano"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_sanstefanoHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/TprRcYb8GMotp79SA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="east_smoha"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="east"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="east_smohaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/FLQkaGDemCxQ9He96">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter middle">
+                    <div class="row g-3">
+                        <div class="specialities-title mb-0">
+                            <h4><i class="fa-solid fa-flag"></i>
+                                <atr data-translation="middle"></atr>
+                            </h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mid_hadaraKid"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="middle"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mid_hadaraKidHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/JWRkacpn7BbK6D316">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mid_hadaraqebli"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="middle"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mid_hadaraqebliHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/AofcF61S95zexuGF6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mid_moharrambiek"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="middle"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mid_moharrambiekHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/sdUiib3Hsbc4U8jF9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mid_abisVII"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="middle"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mid_abisVIIHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/uMoy3Q6NTXBSt5gj6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mid_abisVIII"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="middle"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mid_abisVIIIHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/WbJ44ykBSCcjyfKb6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="mid_abisX"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="middle"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="mid_abisXHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/8ajQCU1W77bKG8PX8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter west">
+                    <div class="row g-3">
+                        <div class="specialities-title mb-0">
+                            <h4><i class="fa-solid fa-flag"></i>
+                                <atr data-translation="west"></atr>
+                            </h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_DisabilityHome"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_DisabilityHomeHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/AGK9T34by1fVLXf37">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_BenSahlan"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_BenSahlanHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/AwVbyorPLAUm9NZA7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_Amoud"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_AmoudHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/6gSUsw8DXwdEdFEo9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_Qabbary"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_QabbaryHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/LZ7dBg12nNxYb9ru7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_Karantiena"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_KarantienaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/7MeDVTmCAQYtDjv16">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_Mitrass"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_MitrassHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/ktoRRnbPc7MYRTyy7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_MitrassNorth"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_MitrassNorthHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/mGMx2aUU7kWmo71y7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_MitrassSouth"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_MitrassSouthHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/PSCrQW2w2JUbH37f6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_Mafrouza"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_MafrouzaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/A9e1NkUPnjpp135WA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_Werdian"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_WerdianHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/kofGL2CgvSrKSy35A">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="west_Karmous"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="west"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="west_KarmousHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/9HUJsTLTMPB2gQCJ8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter gomrok">
+                    <div class="row g-3">
+                        <div class="specialities-title mb-0">
+                            <h4><i class="fa-solid fa-flag"></i>
+                                <atr data-translation="gomrok"></atr>
+                            </h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="gomrok_amal"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="gomrok"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="gomrok_amalHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/iK1uP9QD7teQYRyS9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="gomrok_gomrok"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="gomrok"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="gomrok_gomrokHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/7ZD6NaLn8k4oYmqe8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="gomrok_haggary"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="gomrok"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="gomrok_haggaryHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/fLiW5Aa8PnAGuWGDA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="gomrok_manshiya"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="gomrok"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="gomrok_manshiyaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/oM4TgHgXJyjB6yY58">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="gomrok_monaiier"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="gomrok"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="gomrok_monaiierHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/4hFZ6LUj1xyZ3Trx7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter agamy">
+                    <div class="row g-3">
+                        <div class="specialities-title mb-0">
+                            <h4><i class="fa-solid fa-flag"></i>
+                                <atr data-translation="agamy"></atr>
+                            </h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="agamy_wadialqamar"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="agamy"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="agamy_wadialqamarHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="#">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="agamy_Dikhaila"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="agamy"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="agamy_DikhailaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="#">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="agamy_Bitash"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="agamy"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="agamy_BitashHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="#">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="agamy_Bahria"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="agamy"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="agamy_BahriaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="#">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="agamy_Rifia"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="agamy"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="agamy_RifiaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="#">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="agamy_21"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="agamy"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="agamy_21Head"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="#">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="agamy_26"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="agamy"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="agamy_26Head"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="#">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="agamy_sidiKrier"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="agamy"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="agamy_sidiKrierHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="#">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter amriya">
+                    <div class="row g-3">
+                        <div class="specialities-title mb-0">
+                            <h4><i class="fa-solid fa-flag"></i>
+                                <atr data-translation="amriya"></atr>
+                            </h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_AbdelkaderMC"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_AbdelkaderMCHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/rxzHE7dEyBGfwB9p8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_kids"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_kidsHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/KHyPydRf23qkPeZAA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Abosir"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_AbosirHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/gSzDWKcnbP8voewh7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Algeria"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_AlgeriaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/Svoq2LeHKhGJs7Ev8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_King"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_KingHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/HZXcJF62fpZ1KD528">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Magzar"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_MagzarHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/dyPjAmgWbUs8PvGW9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Nasriya"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_NasriyaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/TenxWBqxhD8RnnLi6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Hawariya"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_HawariyaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/vQprwHzguDiemnMm8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_NewVally"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_NewVallyHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/DGbtiw5mKWfswQvy5">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Wafaa"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_WafaaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/CB4qtqjFe6YXExx48">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_waqqad"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_waqqadHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/4pWsWhgqMFgxPkLc8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Yemen"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_YemenHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <h6>
+                                            <a href="https://maps.app.goo.gl/qNWivq6ztBhnMSyZA">
+                                                <atr data-translation="location"></atr>
+                                            </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Bagdad"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_BagdadHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/pRmAGnLWjgUAHPyJ7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Khaled"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_KhaledHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/jKqzUhfRCNnRLZUVA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Sanad"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_SanadHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/rmzxjA3jutF4m1QZA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Palestine"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_PalestineHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/nXxDmnHVwHRjPKJT9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Galaa"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_GalaaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/XX7xfUQjhoBoM75H9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Amria"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_AmriaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/WZ6Tdx96Jx2JM4Am6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="amria_Hares"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="amriya"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="amria_HaresHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://maps.app.goo.gl/NE7xemSsbaA7SYQJA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter borg">
+                    <div class="row g-3">
+                        <div class="specialities-title mb-0">
+                            <h4><i class="fa-solid fa-flag"></i>
+                                <atr data-translation="borg"></atr>
+                            </h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_MC"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_MCHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/m8NdP8jSrfrVZb9cA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_ِAboZahra"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_ِAboZahraHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/K1XNRq9KbKuZwiWg9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_AboSir"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_AboSirHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/mJ9Xh8XCLrdYxEAz7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_Old"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_OldHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/aNLoKc4qjcXxr6jY7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_Tanmia"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_TanmiaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="#">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_Sanaqra"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_SanaqraHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/SscCaxzBkPzKxNtB7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_Ola"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_OlaHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/G6wRezHCMPYbDnjn9">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_Gharbaniat"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_GharbaniatHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/wGz5eDR1UTWKDHfdA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_BangarI"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_BangarIHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/Pf2VooSUDVF3BVZ67">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_Bahij"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_BahijHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/efsG1rmY32ADdC4z6">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_Village18"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_Village18Head"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/REFED4jjwz26qfdMA">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_Village19"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_Village19Head"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/EAjy7sYqxBppBSTE8">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="accUnitTab">
+                                <div class="accUnitTitle">
+                                    <h5>
+                                        <atr data-translation="borg_AbdelBaset"></atr>
+                                    </h5>
+                                    <h6>
+                                        <atr data-translation="primaryHCL"></atr>
+                                    </h6>
+                                </div>
+                                <div class="accContent">
+                                    <div class="following">
+                                        <atr data-translation="unitFollow"></atr><br>
+                                        <atr data-translation="borg"></atr>
+                                    </div>
+                                    <p>
+                                        <atr data-translation="depChief"></atr>
+                                    </p>
+                                    <h6>
+                                        <atr data-translation="borg_AbdelBasetHead"></atr>
+                                    </h6>
+                                    <h5 class="mt-4">
+                                        <a href="https://goo.gl/maps/XTsyafno1XWyD9xS7">
+                                            <atr data-translation="location"></atr>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="PADHAFooter"></div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+<div id="PADHAJS"></div>
+
+<script src="../js/NavBars.js"></script>
+<script src="../js/arabic.js" type="module"></script>
+<script src="../js/main.js"></script>
+
+<script src="../js/specialists.js"></script>
+
+</html>

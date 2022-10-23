@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Public Administration of Dental Health, Health Affairs Directorate in Alexandria, 
+  Egyptian Ministry of Health and Population.">
+
+  <!-- CSS font Awesome files -->
+  <link rel="stylesheet" href="../css/font-awesome.css">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS files -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" id="bootstrapCssFile">
+
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+  <!-- CSS Master document files -->
+  <link rel="stylesheet" href="../css/main.css" type="text/css" id="styleSheetFile">
+  <link rel="stylesheet" href="../css/bootstrap.min.css.map" type="text/css" id="styleSheetFileMap">
+
+  <!-- That file can fix any webkit without adding webkit for all classes -->
+  <link rel="stylesheet" href="../css/normalize.css">
+
+  <!-- Tab Icon -->
+  <link rel="shortcut icon" href="../svg/portrait-PADH-light.svg" type="image/x-icon">
+
+  <!-- tab title -->
+  <title data-translation="newRegister">New Registeration</title>
+
+</head>
+
+<body>
+  <div id="PADHANavBar"></div>
+
+  <div class="container mobile-padding mt-5">
+    <div class="row gx-4">
+      <div class="col-lg-3 col-md-12">
+        <div class="new-profile-pic">
+          <div class="new-profile-front">
+            <img src="../Images/avatar.png" alt="" />
+          </div>
+          <div class="new-profile-back">
+            <a href="#">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              <atr data-translation="supItemUpload"></atr>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-pen-to-square"></i>
+              <atr data-translation="supItemEdit"></atr>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-trash-can"></i>
+              <atr data-translation="supItemDelete"></atr>
+            </a>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="d-none d-lg-block">
+          <div class="specialities-sidebar-list">
+            <h5>
+              <atr data-translation="forMore"></atr>
+            </h5>
+            <a href="../html/message.html" class="specialities-sidebar-item">
+              <i class="fa-solid fa-message"></i>
+              <atr data-translation="mission"></atr>
+            </a>
+            <a href="../html/team.html" class="specialities-sidebar-item">
+              <i class="fa-solid fa-users"></i>
+              <atr data-translation="team"></atr>
+            </a>
+            <a href="../html/contact.html" class="specialities-sidebar-item">
+              <i class="fa-solid fa-phone"></i>
+              <atr data-translation="contact"></atr>
+            </a>
+            <a href="../html/terms.html" class="specialities-sidebar-item">
+              <i class="fa-solid fa-scale-balanced"></i>
+              <atr data-translation="terms"></atr>
+            </a>
+            <a href="../html/privacy.html" class="specialities-sidebar-item">
+              <i class="fa-solid fa-shield"></i>
+              <atr data-translation="privacy"></atr>
+            </a>
+
+            <div class="mb-5"></div>
+          </div>
+        </div>
+      </div>
+      <form class="col-lg-9 col-md-12">
+        <!-- Personal Data =========================================== -->
+        <div class="data">
+          <h4>
+            <i class="fa-solid fa-user data-icon"></i>
+            <atr data-translation="regPersonalData"></atr>
+          </h4>
+          <div class="row g-3">
+            <div class="col-md-3 col-sm-12">
+              <label for="firstName" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="firstNameAr"></atr>
+              </label>
+              <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="col-md-9 col-sm-12">
+              <label for="lastName" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="lastNameAr"></atr>
+              </label>
+              <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="col-md-8 col-sm-12">
+              <label for="lastNameAr" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="lastNameEn"></atr>
+              </label>
+              <input type="text" class="form-control text-right" id="lastNameAr" required>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <label for="firstNameAr" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="firstNameEn"></atr>
+              </label>
+              <input type="text" class="form-control text-right" id="firstNameAr" required>
+            </div>
+            <div class="col-md-8 col-sm-12">
+              <label for="address" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="regAddress"></atr>
+              </label>
+              <input type="text" class="form-control" id="address">
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <label for="government" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="regGov"></atr>
+              </label>
+              <select class="form-select" id="government" required>
+                <option value[ data-translation="choose" ]></option>
+                <option value[ data-translation="govAlexandria" ]></option>
+                <option value[ data-translation="govAswan" ]></option>
+                <option value[ data-translation="govAsyut" ]></option>
+                <option value[ data-translation="govBeheira" ]></option>
+                <option value[ data-translation="govBeniSuef" ]></option>
+                <option value[ data-translation="govCairo" ]></option>
+                <option value[ data-translation="govDakahlia" ]></option>
+                <option value[ data-translation="govDamietta" ]></option>
+                <option value[ data-translation="govFaiyum" ]></option>
+                <option value[ data-translation="govGharbia" ]></option>
+                <option value[ data-translation="govGiza" ]></option>
+                <option value[ data-translation="govIsmailia" ]></option>
+                <option value[ data-translation="govKafrElSheikh" ]></option>
+                <option value[ data-translation="govLuxor" ]></option>
+                <option value[ data-translation="govMatruh" ]></option>
+                <option value[ data-translation="govMinya" ]></option>
+                <option value[ data-translation="govMonufia" ]></option>
+                <option value[ data-translation="govNewValley" ]></option>
+                <option value[ data-translation="govNorthSinai" ]></option>
+                <option value[ data-translation="govSouthSinai" ]></option>
+                <option value[ data-translation="govMinya" ]></option>
+                <option value[ data-translation="govQalyubia" ]></option>
+                <option value[ data-translation="govQena" ]></option>
+                <option value[ data-translation="govRedSea" ]></option>
+                <option value[ data-translation="govSharqia" ]></option>
+                <option value[ data-translation="govSohag" ]></option>
+                <option value[ data-translation="govSuez" ]></option>
+              </select>
+            </div>
+            <div class="col-lg-5 col-md-6 col-md-12">
+              <label for="nationalID" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="regNationalID"></atr>
+              </label>
+              <input type="number" class="form-control" id="nationalID" min="26001010100000" max="39912318899099"
+                required onchange="DatOfBirthAuto()">
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <label for="dateOfBirth" class="form-label">
+                <atr data-translation="dateOFBirth"></atr>
+              </label>
+              <p class="form-control IDAutoFilled text-center" id="dateOfBirth"></p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <label for="gender" class="form-label">
+                <atr data-translation="regSex"></atr>
+              </label>
+              <p class="form-control IDAutoFilled text-center" id="gender"></p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-6">
+              <label for="placeOfBirth" class="form-label">
+                <atr data-translation="placeOfBirth"></atr>
+              </label>
+              <div class="form-control IDAutoFilled" id="placeOfBirth"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <label for="dateOfRetirement" class="form-label">
+                <atr data-translation="dateOfRetirement"></atr>
+              </label>
+              <p class="form-control IDAutoFilled text-center" id="dateOfRetirement"></p>
+            </div>
+            <div class="col-lg-1 col-md-2 col-4">
+              <label for="toRetireDay" class="form-label text-center">
+                <atr data-translation="regDay"></atr>
+              </label>
+              <p class="form-control IDAutoFilled text-center" id="toRetireDay"></p>
+            </div>
+            <div class="col-lg-1 col-md-2 col-4">
+              <label for="toRetireMonth" class="form-label text-center">
+                <atr data-translation="regMonth"></atr>
+              </label>
+              <p class="form-control IDAutoFilled text-center" id="toRetireMonth"></p>
+            </div>
+            <div class="col-lg-1 col-md-2 col-4">
+              <label for="toRetireYear" class="form-label text-center">
+                <atr data-translation="regYear"></atr>
+              </label>
+              <p class="form-control IDAutoFilled text-center" id="toRetireYear"></p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-6">
+              <label for="phoneNumberOne" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="firstPhone"></atr>
+              </label>
+              <input type="number" class="form-control" id="phoneNumberOne" required="" min="01000000000"
+                max="01299999999">
+            </div>
+            <div class="col-md-6 col-sm-12 col-6">
+              <label for="phoneNumberTwo" class="form-label">
+                <atr data-translation="secondPhone"></atr>
+              </label>
+              <input type="number" class="form-control" id="phoneNumberTwo" required="" min="01000000000"
+                max="01299999999">
+            </div>
+          </div>
+        </div>
+
+        <!-- Greaduation Data ======================================== -->
+        <div class="data">
+          <h4>
+            <i class="fa-solid fa-graduation-cap data-icon"></i>
+            <atr data-translation="gradData"></atr>
+          </h4>
+          <div class="row g-3 grad">
+            <div class="col-md-5 col-12">
+              <label for="jobTitle" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="jobTitle"></atr>
+              </label>
+              <select class="form-select" id="jobTitle" required="">
+                <option value[ data-translation="gradDentist" ] selected></option>
+                <option value[ data-translation="gradTech" ]></option>
+              </select>
+            </div>
+            <div class="col-md-5 col-8">
+              <label for="graduationUniversity" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="gradUni"></atr>
+              </label>
+              <select class="form-select" required="" id="graduationUniversity">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="uniAlexandria" ]></option>
+                <option value[ data-translation="uniCairo" ]></option>
+                <option value[ data-translation="uniAinShams" ]></option>
+                <option value[ data-translation="unisadatAcademy" ]></option>
+                <option value[ data-translation="uniArabAcademy" ]></option>
+                <option value[ data-translation="uniModernTech" ]></option>
+                <option value[ data-translation="uniAmericanCairo" ]></option>
+                <option value[ data-translation="uniBritishCairo" ]></option>
+                <option value[ data-translation="uniFrenchCairo" ]></option>
+                <option value[ data-translation="uniOct6" ]></option>
+                <option value[ data-translation="uniAsyut" ]></option>
+                <option value[ data-translation="uniOctModernSci" ]></option>
+                <option value[ data-translation="uniAzhar" ]></option>
+                <option value[ data-translation="uniAhram" ]></option>
+                <option value[ data-translation="uniDelta" ]></option>
+                <option value[ data-translation="uniFuture" ]></option>
+                <option value[ data-translation="uniMansoura" ]></option>
+                <option value[ data-translation="uniMonoufia" ]></option>
+                <option value[ data-translation="uniMinia" ]></option>
+                <option value[ data-translation="uniNahda" ]></option>
+                <option value[ data-translation="uniBadr" ]></option>
+                <option value[ data-translation="uniBanha" ]></option>
+                <option value[ data-translation="uniSengour" ]></option>
+                <option value[ data-translation="uniSouhag" ]></option>
+                <option value[ data-translation="uniSinai" ]></option>
+                <option value[ data-translation="uniTanta" ]></option>
+                <option value[ data-translation="uniPharos" ]></option>
+                <option value[ data-translation="uniSuizCanal" ]></option>
+                <option value[ data-translation="uniKafrShiekh" ]></option>
+                <option value[ data-translation="uniInternationalEgypt" ]></option>
+                <option value[ data-translation="uniPrincessFatma" ]></option>
+                <option value[ data-translation="uniEgyptSci" ]></option>
+                <option value[ data-translation="uniMSA" ]></option>
+                <option value[ data-translation="uniMOHP" ]></option>
+                <option value[ data-translation="uniHighInistitute" ]></option>
+                <option value[ data-translation="uniMedicalReshInistitute" ]></option>
+                <option value[ data-translation="uniOutEgypt" ]></option>
+                <option value[ data-translation="uniOther" ]></option>
+              </select>
+            </div>
+            <div class="col-md-2 col-4">
+              <label for="graduationYear" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="gradYear"></atr>
+              </label>
+              <input type="number" class="form-control text-center" id="graduationYear" required="" min="1960"
+                max="2050" />
+            </div>
+            <div class="my-3"></div>
+
+            <div class="col-md-5 col-12">
+              <label for="profDiploma" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="diploma"></atr>
+              </label>
+              <select class="form-select" id="profDiploma" required="">
+                <option value[ data-translation="choose" ] selected></option>
+              </select>
+            </div>
+            <div class="col-md-5 col-8">
+              <label for="DiplomaUniversity" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="diplomaUni"></atr>
+              </label>
+              <select class="form-select" required="" id="DiplomaUniversity">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="uniAlexandria" ]></option>
+                <option value[ data-translation="uniCairo" ]></option>
+                <option value[ data-translation="uniAinShams" ]></option>
+                <option value[ data-translation="unisadatAcademy" ]></option>
+                <option value[ data-translation="uniArabAcademy" ]></option>
+                <option value[ data-translation="uniModernTech" ]></option>
+                <option value[ data-translation="uniAmericanCairo" ]></option>
+                <option value[ data-translation="uniBritishCairo" ]></option>
+                <option value[ data-translation="uniFrenchCairo" ]></option>
+                <option value[ data-translation="uniOct6" ]></option>
+                <option value[ data-translation="uniAsyut" ]></option>
+                <option value[ data-translation="uniOctModernSci" ]></option>
+                <option value[ data-translation="uniAzhar" ]></option>
+                <option value[ data-translation="uniAhram" ]></option>
+                <option value[ data-translation="uniDelta" ]></option>
+                <option value[ data-translation="uniFuture" ]></option>
+                <option value[ data-translation="uniMansoura" ]></option>
+                <option value[ data-translation="uniMonoufia" ]></option>
+                <option value[ data-translation="uniMinia" ]></option>
+                <option value[ data-translation="uniNahda" ]></option>
+                <option value[ data-translation="uniBadr" ]></option>
+                <option value[ data-translation="uniBanha" ]></option>
+                <option value[ data-translation="uniSengour" ]></option>
+                <option value[ data-translation="uniSouhag" ]></option>
+                <option value[ data-translation="uniSinai" ]></option>
+                <option value[ data-translation="uniTanta" ]></option>
+                <option value[ data-translation="uniPharos" ]></option>
+                <option value[ data-translation="uniSuizCanal" ]></option>
+                <option value[ data-translation="uniKafrShiekh" ]></option>
+                <option value[ data-translation="uniInternationalEgypt" ]></option>
+                <option value[ data-translation="uniPrincessFatma" ]></option>
+                <option value[ data-translation="uniEgyptSci" ]></option>
+                <option value[ data-translation="uniMSA" ]></option>
+                <option value[ data-translation="uniMOHP" ]></option>
+                <option value[ data-translation="uniHighInistitute" ]></option>
+                <option value[ data-translation="uniMedicalReshInistitute" ]></option>
+                <option value[ data-translation="uniOutEgypt" ]></option>
+                <option value[ data-translation="uniOther" ]></option>
+              </select>
+            </div>
+            <div class="col-md-2 col-4">
+              <label for="diplomaYear" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="gradYear"></atr>
+              </label>
+              <input type="number" class="form-control text-center" id="diplomaYear" required="" min="1960"
+                max="2050" />
+            </div>
+            <div class="my-3"></div>
+
+            <div class="col-md-5 col-12">
+              <label for="profMaster" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="master"></atr>
+              </label>
+              <select class="form-select" id="profMaster" required="">
+                <option value[ data-translation="choose" ] selected></option>
+              </select>
+            </div>
+            <div class="col-md-5 col-8">
+              <label for="masterUniversity" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="masterUni"></atr>
+              </label>
+              <select class="form-select" required="" id="masterUniversity">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="uniAlexandria" ]></option>
+                <option value[ data-translation="uniCairo" ]></option>
+                <option value[ data-translation="uniAinShams" ]></option>
+                <option value[ data-translation="unisadatAcademy" ]></option>
+                <option value[ data-translation="uniArabAcademy" ]></option>
+                <option value[ data-translation="uniModernTech" ]></option>
+                <option value[ data-translation="uniAmericanCairo" ]></option>
+                <option value[ data-translation="uniBritishCairo" ]></option>
+                <option value[ data-translation="uniFrenchCairo" ]></option>
+                <option value[ data-translation="uniOct6" ]></option>
+                <option value[ data-translation="uniAsyut" ]></option>
+                <option value[ data-translation="uniOctModernSci" ]></option>
+                <option value[ data-translation="uniAzhar" ]></option>
+                <option value[ data-translation="uniAhram" ]></option>
+                <option value[ data-translation="uniDelta" ]></option>
+                <option value[ data-translation="uniFuture" ]></option>
+                <option value[ data-translation="uniMansoura" ]></option>
+                <option value[ data-translation="uniMonoufia" ]></option>
+                <option value[ data-translation="uniMinia" ]></option>
+                <option value[ data-translation="uniNahda" ]></option>
+                <option value[ data-translation="uniBadr" ]></option>
+                <option value[ data-translation="uniBanha" ]></option>
+                <option value[ data-translation="uniSengour" ]></option>
+                <option value[ data-translation="uniSouhag" ]></option>
+                <option value[ data-translation="uniSinai" ]></option>
+                <option value[ data-translation="uniTanta" ]></option>
+                <option value[ data-translation="uniPharos" ]></option>
+                <option value[ data-translation="uniSuizCanal" ]></option>
+                <option value[ data-translation="uniKafrShiekh" ]></option>
+                <option value[ data-translation="uniInternationalEgypt" ]></option>
+                <option value[ data-translation="uniPrincessFatma" ]></option>
+                <option value[ data-translation="uniEgyptSci" ]></option>
+                <option value[ data-translation="uniMSA" ]></option>
+                <option value[ data-translation="uniMOHP" ]></option>
+                <option value[ data-translation="uniHighInistitute" ]></option>
+                <option value[ data-translation="uniMedicalReshInistitute" ]></option>
+                <option value[ data-translation="uniOutEgypt" ]></option>
+                <option value[ data-translation="uniOther" ]></option>
+              </select>
+            </div>
+            <div class="col-md-2 col-4">
+              <label for="masterYear" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="gradYear"></atr>
+              </label>
+              <input type="number" class="form-control text-center" id="masterYear" required="" min="1960" max="2050" />
+            </div>
+            <div class="my-3"></div>
+
+            <div class="col-md-5 col-12">
+              <label for="profPhD" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="phd"></atr>
+              </label>
+              <select class="form-select" id="profPhD" required="">
+                <option value[ data-translation="choose" ] selected></option>
+              </select>
+            </div>
+            <div class="col-md-5 col-8">
+              <label for="PhDUniversity" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="phdUni"></atr>
+              </label>
+              <select class="form-select" required="" id="PhDUniversity">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="uniAlexandria" ]></option>
+                <option value[ data-translation="uniCairo" ]></option>
+                <option value[ data-translation="uniAinShams" ]></option>
+                <option value[ data-translation="unisadatAcademy" ]></option>
+                <option value[ data-translation="uniArabAcademy" ]></option>
+                <option value[ data-translation="uniModernTech" ]></option>
+                <option value[ data-translation="uniAmericanCairo" ]></option>
+                <option value[ data-translation="uniBritishCairo" ]></option>
+                <option value[ data-translation="uniFrenchCairo" ]></option>
+                <option value[ data-translation="uniOct6" ]></option>
+                <option value[ data-translation="uniAsyut" ]></option>
+                <option value[ data-translation="uniOctModernSci" ]></option>
+                <option value[ data-translation="uniAzhar" ]></option>
+                <option value[ data-translation="uniAhram" ]></option>
+                <option value[ data-translation="uniDelta" ]></option>
+                <option value[ data-translation="uniFuture" ]></option>
+                <option value[ data-translation="uniMansoura" ]></option>
+                <option value[ data-translation="uniMonoufia" ]></option>
+                <option value[ data-translation="uniMinia" ]></option>
+                <option value[ data-translation="uniNahda" ]></option>
+                <option value[ data-translation="uniBadr" ]></option>
+                <option value[ data-translation="uniBanha" ]></option>
+                <option value[ data-translation="uniSengour" ]></option>
+                <option value[ data-translation="uniSouhag" ]></option>
+                <option value[ data-translation="uniSinai" ]></option>
+                <option value[ data-translation="uniTanta" ]></option>
+                <option value[ data-translation="uniPharos" ]></option>
+                <option value[ data-translation="uniSuizCanal" ]></option>
+                <option value[ data-translation="uniKafrShiekh" ]></option>
+                <option value[ data-translation="uniInternationalEgypt" ]></option>
+                <option value[ data-translation="uniPrincessFatma" ]></option>
+                <option value[ data-translation="uniEgyptSci" ]></option>
+                <option value[ data-translation="uniMSA" ]></option>
+                <option value[ data-translation="uniMOHP" ]></option>
+                <option value[ data-translation="uniHighInistitute" ]></option>
+                <option value[ data-translation="uniMedicalReshInistitute" ]></option>
+                <option value[ data-translation="uniOutEgypt" ]></option>
+                <option value[ data-translation="uniOther" ]></option>
+              </select>
+            </div>
+            <div class="col-md-2 col-4">
+              <label for="PhDYear" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="gradYear"></atr>
+              </label>
+              <input type="number" class="form-control text-center" id="PhDYear" required="" min="1960" max="2050" />
+            </div>
+            <div class="my-3"></div>
+
+            <div class="col-md-5 col-12">
+              <label for="profFelloship" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="fellow"></atr>
+              </label>
+              <select class="form-select" id="profFelloship" required="">
+                <option value[ data-translation="choose" ] selected></option>
+              </select>
+            </div>
+            <div class="col-md-5 col-8">
+              <label for="fellowshipUniversity" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="fellowUni"></atr>
+              </label>
+              <select class="form-select" required="" id="fellowshipUniversity">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="uniAlexandria" ]></option>
+                <option value[ data-translation="uniCairo" ]></option>
+                <option value[ data-translation="uniAinShams" ]></option>
+                <option value[ data-translation="unisadatAcademy" ]></option>
+                <option value[ data-translation="uniArabAcademy" ]></option>
+                <option value[ data-translation="uniModernTech" ]></option>
+                <option value[ data-translation="uniAmericanCairo" ]></option>
+                <option value[ data-translation="uniBritishCairo" ]></option>
+                <option value[ data-translation="uniFrenchCairo" ]></option>
+                <option value[ data-translation="uniOct6" ]></option>
+                <option value[ data-translation="uniAsyut" ]></option>
+                <option value[ data-translation="uniOctModernSci" ]></option>
+                <option value[ data-translation="uniAzhar" ]></option>
+                <option value[ data-translation="uniAhram" ]></option>
+                <option value[ data-translation="uniDelta" ]></option>
+                <option value[ data-translation="uniFuture" ]></option>
+                <option value[ data-translation="uniMansoura" ]></option>
+                <option value[ data-translation="uniMonoufia" ]></option>
+                <option value[ data-translation="uniMinia" ]></option>
+                <option value[ data-translation="uniNahda" ]></option>
+                <option value[ data-translation="uniBadr" ]></option>
+                <option value[ data-translation="uniBanha" ]></option>
+                <option value[ data-translation="uniSengour" ]></option>
+                <option value[ data-translation="uniSouhag" ]></option>
+                <option value[ data-translation="uniSinai" ]></option>
+                <option value[ data-translation="uniTanta" ]></option>
+                <option value[ data-translation="uniPharos" ]></option>
+                <option value[ data-translation="uniSuizCanal" ]></option>
+                <option value[ data-translation="uniKafrShiekh" ]></option>
+                <option value[ data-translation="uniInternationalEgypt" ]></option>
+                <option value[ data-translation="uniPrincessFatma" ]></option>
+                <option value[ data-translation="uniEgyptSci" ]></option>
+                <option value[ data-translation="uniMSA" ]></option>
+                <option value[ data-translation="uniMOHP" ]></option>
+                <option value[ data-translation="uniHighInistitute" ]></option>
+                <option value[ data-translation="uniMedicalReshInistitute" ]></option>
+                <option value[ data-translation="uniOutEgypt" ]></option>
+                <option value[ data-translation="uniOther" ]></option>
+              </select>
+            </div>
+            <div class="col-md-2 col-4">
+              <label for="fellowYear" class="form-label">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <atr data-translation="gradYear"></atr>
+              </label>
+              <input type="number" class="form-control text-center" id="fellowYear" required="" min="1960" max="2050" />
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Job Data ================================================ -->
+        <div class="data">
+          <h4><i class="fa-solid fa-briefcase data-icon"></i>
+            <atr data-translation="jobData"></atr>
+          </h4>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="medicalDistrct" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="districts"></atr>
+              </label>
+              <select class="form-select" id="medicalDistrct" required>
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="montaza" ]></option>
+                <option value[ data-translation="east" ]></option>
+                <option value[ data-translation="middle" ]></option>
+                <option value[ data-translation="west" ]></option>
+                <option value[ data-translation="gomrok" ]></option>
+                <option value[ data-translation="agamy" ]></option>
+                <option value[ data-translation="amriya" ]></option>
+                <option value[ data-translation="borg" ]></option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="medicalUnit" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="unitName"></atr>
+              </label>
+              <select class="form-select" id="medicalUnit" required="">
+                <option value[ data-translation="choose" ] selected></option>
+              </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <label for="jobHiringDate" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="jobHiringDate"></atr>
+              </label>
+              <input type="date" class="form-control" id="jobHiringDate" required="" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <label for="jobStartDate" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="jobStartDate"></atr>
+              </label>
+              <input type="date" class="form-control" id="jobStartDate" required="" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <label for="JobStatus" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="jobStatus"></atr>
+              </label>
+              <select class="form-select" id="JobStatus" required="">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="regular" ]></option>
+                <option value[ data-translation="vacLabour" ]></option>
+                <option value[ data-translation="vacSick" ]></option>
+                <option value[ data-translation="vacChildCare" ]></option>
+                <option value[ data-translation="vacFamilyCare" ]></option>
+                <option value[ data-translation="vacSpecial" ]></option>
+                <option value[ data-translation="exContract" ]></option>
+                <option value[ data-translation="inContract" ]></option>
+                <option value[ data-translation="exDeputation" ]></option>
+                <option value[ data-translation="inDeputation" ]></option>
+                <option value[ data-translation="exLoan" ]></option>
+                <option value[ data-translation="inLoan" ]></option>
+                <option value[ data-translation="cutout" ]></option>
+              </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <label for="JobType" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="jobType"></atr>
+              </label>
+              <select class="form-select" id="JobType" required="">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="fullTime" ]></option>
+                <option value[ data-translation="partTime" ]></option>
+                <option value[ data-translation="jobTypeNone" ]></option>
+              </select>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <label for="jobTypeEndDate" class="form-label">
+                <atr data-translation="jobEndDate"></atr>
+              </label>
+              <input type="date" class="form-control" id="jobTypeEndDate" />
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <label for="professionalDegree" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="profDegree"></atr>
+              </label>
+              <select class="form-select" id="professionalDegree" required="">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="generalDentist" ]></option>
+                <option value[ data-translation="assSpecialist" ]></option>
+                <option value[ data-translation="specialist" ]></option>
+                <option value[ data-translation="assConsaultant" ]></option>
+                <option value[ data-translation="consaultant" ]></option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="specializedDepartment" class="form-label">
+                <atr data-translation="department"></atr>
+                <span class="black-color">
+                  <atr data-translation="departmentHash"></atr>
+                </span>
+              </label>
+              <select class="form-select" id="specializedDepartment">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="operative" ]></option>
+                <option value[ data-translation="perio" ]></option>
+                <option value[ data-translation="pedo" ]></option>
+                <option value[ data-translation="radiology" ]></option>
+                <option value[ data-translation="oralSurgery" ]></option>
+                <option value[ data-translation="implant" ]></option>
+                <option value[ data-translation="maxillo" ]></option>
+                <option value[ data-translation="fixedProsth" ]></option>
+                <option value[ data-translation="prosthesis" ]></option>
+                <option value[ data-translation="ortho" ]></option>
+                <option value[ data-translation="endo" ]></option>
+                <option value[ data-translation="pathology" ]></option>
+                <option value[ data-translation="diagnosis" ]></option>
+                <option value[ data-translation="healthEducation" ]></option>
+                <option value[ data-translation="admins" ]></option>
+                <option value[ data-translation="infectionCotrol" ]></option>
+                <option value[ data-translation="quality" ]></option>
+                <option value[ data-translation="itTech" ]></option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="adminJobTitle" class="form-label">
+                <atr data-translation="adminJobTitle"></atr>
+              </label>
+              <select class="form-select" id="adminJobTitle" required="">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="depChief" ]></option>
+                <option value[ data-translation="jobTitleContent" ]></option>
+                <option value[ data-translation="depHead" ]></option>
+              </select>
+            </div>
+            <div class="col-md-6 col-6">
+              <label for="financialDegree" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="finDegree"></atr>
+              </label>
+              <select class="form-select" id="financialDegree" required="">
+                <option value[ data-translation="choose" ] selected></option>
+                <option value[ data-translation="degMajor" ]></option>
+                <option value[ data-translation="degFirst" ]></option>
+                <option value[ data-translation="degSecond" ]></option>
+                <option value[ data-translation="degThird" ]></option>
+                <option value[ data-translation="degFourth" ]></option>
+              </select>
+            </div>
+            <div class="col-md-6 col-6">
+              <label for="insuranceNumber" class="form-label">
+                <i class="fa-solid fa-asterisk"></i>
+                <atr data-translation="insuranceNo"></atr>
+              </label>
+              <input type="number" class="form-control" id="insuranceNumber" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Registration buttonn ==================================== -->
+        <div class="mb-4 row g-1">
+          <button class="btn btn-padha col-md-12 py-2" type="submit" id="submitStaticsToServer">
+            <i class="fa-solid fa-cloud-arrow-up mr-3"></i>
+            <atr data-translation="sendRegiData"></atr>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="PADHAFooter"></div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+<div id="PADHAJS"></div>
+<script src="../js/NavBars.js"></script>
+<script src="../js/arabic.js" type="module"></script>
+<script src="../js/main.js"></script>
+
+<script src="../js/newRegistration.js"></script>
+
+</html>

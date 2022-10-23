@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Public Administration of Dental Health, Health Affairs Directorate in Alexandria, 
+                Egyptian Ministry of Health and Population.">
+
+    <!-- CSS font Awesome files -->
+    <link rel="stylesheet" href="../css/font-awesome.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" id="bootstrapCssFile">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- CSS Master document files -->
+    <link rel="stylesheet" href="../css/main.css" type="text/css" id="styleSheetFile">
+
+    <!-- That file can fix any webkit without adding webkit for all classes -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" href="../svg/portrait-PADH-light.svg" type="image/x-icon">
+
+    <!-- tab title -->
+    <title data-translation="dentalUnits">Dental Units</title>
+
+</head>
+
+<body>
+    <div id="PADHANavBar"></div>
+
+    <!-- ============================================= upper tags ============================================= -->
+    <div class="container mobile-padding">
+        <nav class="pager">
+            <h3><i class="fas fa-caret-right"></i>
+                <atr data-translation="dentalUnits"></atr>
+            </h3>
+            <ul class="pager-items">
+                <li class="navpager-item"><a href="../html/index.html">
+                        <atr data-translation="home"></atr>
+                    </a></li>
+                <li class="navpager-arrow"><i class="fas fa-angle-double-right page-arrow-back"></i></li>
+            </ul>
+            <ul>
+                <li class="navpager-item current">
+                    <atr data-translation="dentalUnits"></atr>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="unit-card-space"></div>
+
+    <!-- ============================================= Accordion ============================================= -->
+    <div class="container mobile-padding">
+        <div class="row">
+            <div class="col-3 d-none d-lg-block">
+                <div class="specialities-sidebar-list">
+                    <h5>
+                        <atr data-translation="forMore"></atr>
+                    </h5>
+                    <a href="../html/FQA.html" class="specialities-sidebar-item ">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <atr data-translation="fqa"></atr>
+                    </a>
+                    <a href="../html/Specialists.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-user-nurse"></i>
+                        <atr data-translation="specialists"></atr>
+                    </a>
+                    <a href="../html/dental-specialities.html" class="specialities-sidebar-item">
+                        <i class="fa-solid fa-tooth"></i>
+                        <atr data-translation="specialities"></atr>
+                    </a>
+                    <a href="../html/units-and-hospitals.html"
+                        class="specialities-sidebar-item specialities-sidebar-item-activated">
+                        <i class="fa-solid fa-hospital"></i>
+                        <atr data-translation="dentalUnits"></atr>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-9 ">
+                <div id="myBtnContainer">
+                    <button class="specialityBtn" onclick="filterSelection('all')">
+                        <i class="fa-solid fa-list-check mr-2"></i>
+                        <atr data-translation="downloadAll"></atr>
+                    </button>
+                    <button class="specialityBtn active" onclick="filterSelection('protUnits')">
+                        <atr data-translation="protUnits"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('theraUnits')">
+                        <atr data-translation="theraUnits"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('hospitals')">
+                        <atr data-translation="hospitals"></atr>
+                    </button>
+                    <button class="specialityBtn" onclick="filterSelection('centers')">
+                        <atr data-translation="centers"></atr>
+                    </button>
+
+                    <div id="protUnitsFilter" onclick="filterSelection('protUnits')"></div>
+                </div>
+
+                <div class="mb-5 specialityFilter protUnits">
+                    <div class="specialities-title">
+                        <h4><i class="fa-solid fa-hospital-user"></i>
+                            <atr data-translation="protUnits"></atr>
+                        </h4>
+                        <p>
+                            <atr data-translation="protectiveUnitCount"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="primaryHealthCareLevel"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="protectiveUnitsContent"></atr>
+                        </p>
+                    </div>
+                    <div class="hospital-manage mt-4">
+                        <h5>
+                            <i class="fa-solid fa-bell-concierge"></i>
+                            <atr data-translation="denServiceProvided"></atr>
+                        </h5>
+                        <div class="hms">
+                            <div class="row g-2">
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Oral_Surgery.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-user-nurse"></i>
+                                            <p>
+                                                <atr data-translation="oralSurgery"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Operative.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-tooth"></i>
+                                            <p>
+                                                <atr data-translation="operative"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Endodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-syringe"></i>
+                                            <p>
+                                                <atr data-translation="endo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Pedodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-child"></i>
+                                            <p>
+                                                <atr data-translation="pedo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Periodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-droplet"></i>
+                                            <p>
+                                                <atr data-translation="perio"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Prosthodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-teeth"></i>
+                                            <p>
+                                                <atr data-translation="prosthesis"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Radiology.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-radiation"></i>
+                                            <p>
+                                                <atr data-translation="radiology"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Public_health.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-book-open-reader"></i>
+                                            <p>
+                                                <atr data-translation="healthEducation"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="units-and-hospitals">
+                        <a href="../html/protective-units.html">
+                            <div class="units-and-hospitals-item">
+                                <h5><i class="fa-solid fa-bed-pulse"></i>
+                                    <atr data-translation="goTo"></atr>
+                                    <atr data-translation="protUnits"></atr>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter theraUnits">
+                    <div class="specialities-title">
+                        <h4><i class="fa-solid fa-hospital-user"></i>
+                            <atr data-translation="theraUnits"></atr>
+                        </h4>
+                        <p>
+                            <atr data-translation="theraputicUnitCount"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="primaryHealthCareLevel"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="theraputicUnitsContent"></atr>
+                        </p>
+                    </div>
+                    <div class="hospital-manage mt-4">
+                        <h5>
+                            <i class="fa-solid fa-bell-concierge"></i>
+                            <atr data-translation="denServiceProvided"></atr>
+                        </h5>
+                        <div class="hms">
+                            <div class="row g-2">
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Oral_Surgery.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-user-nurse"></i>
+                                            <p>
+                                                <atr data-translation="oralSurgery"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Operative.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-tooth"></i>
+                                            <p>
+                                                <atr data-translation="operative"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Endodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-syringe"></i>
+                                            <p>
+                                                <atr data-translation="endo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Pedodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-child"></i>
+                                            <p>
+                                                <atr data-translation="pedo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Periodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-droplet"></i>
+                                            <p>
+                                                <atr data-translation="perio"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Prosthodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-teeth"></i>
+                                            <p>
+                                                <atr data-translation="prosthesis"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Radiology.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-radiation"></i>
+                                            <p>
+                                                <atr data-translation="radiology"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Public_health.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-book-open-reader"></i>
+                                            <p>
+                                                <atr data-translation="healthEducation"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="units-and-hospitals">
+                        <a href="../html/theraputic-units.html">
+                            <div class="units-and-hospitals-item">
+                                <h5>
+                                    <atr data-translation="goTo"></atr>
+                                    <atr data-translation="theraUnits"></atr>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter hospitals">
+                    <div class="specialities-title">
+                        <h4><i class="fa-solid fa-hospital-user"></i>
+                            <atr data-translation="hospitals"></atr>
+                        </h4>
+                        <p>
+                            <atr data-translation="hospitalCount"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="secondaryHealthCareLevel"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="hospitalsContent"></atr>
+                        </p>
+                    </div>
+                    <div class="hospital-manage mt-4">
+                        <h5>
+                            <i class="fa-solid fa-bell-concierge"></i>
+                            <atr data-translation="denServiceProvided"></atr>
+                        </h5>
+                        <div class="hms">
+                            <div class="row g-2">
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Oral_Surgery.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-user-nurse"></i>
+                                            <p>
+                                                <atr data-translation="oralSurgery"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Operative.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-tooth"></i>
+                                            <p>
+                                                <atr data-translation="operative"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Endodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-syringe"></i>
+                                            <p>
+                                                <atr data-translation="endo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Pedodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-child"></i>
+                                            <p>
+                                                <atr data-translation="pedo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Periodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-droplet"></i>
+                                            <p>
+                                                <atr data-translation="perio"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Prosthodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-teeth"></i>
+                                            <p>
+                                                <atr data-translation="prosthesis"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Radiology.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-radiation"></i>
+                                            <p>
+                                                <atr data-translation="radiology"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Public_health.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-book-open-reader"></i>
+                                            <p>
+                                                <atr data-translation="healthEducation"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Maxillofacial.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-user-nurse"></i>
+                                            <p>
+                                                <atr data-translation="maxillo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Dental_Implantology.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-user-nurse"></i>
+                                            <p>
+                                                <atr data-translation="implant"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="units-and-hospitals">
+                        <a href="../html/hospitals.html">
+                            <div class="units-and-hospitals-item">
+                                <h5>
+                                    <atr data-translation="goTo"></atr>
+                                    <atr data-translation="hospitals"></atr>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-5 specialityFilter centers">
+                    <div class="specialities-title">
+                        <h4><i class="fa-solid fa-hospital-user"></i>
+                            <atr data-translation="hospitals"></atr>
+                        </h4>
+                        <p>
+                            <atr data-translation="centersCount"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="tertiaryHealthCareLevel"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="centersContent"></atr>
+                        </p>
+                        <p>
+                            <atr data-translation="centersContentII"></atr>
+                        </p>
+                    </div>
+                    <div class="hospital-manage mt-4">
+                        <h5>
+                            <i class="fa-solid fa-bell-concierge"></i>
+                            <atr data-translation="denServiceProvided"></atr>
+                        </h5>
+                        <div class="hms">
+                            <div class="row g-2">
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Oral_Surgery.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-user-nurse"></i>
+                                            <p>
+                                                <atr data-translation="oralSurgery"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Operative.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-tooth"></i>
+                                            <p>
+                                                <atr data-translation="operative"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Endodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-syringe"></i>
+                                            <p>
+                                                <atr data-translation="endo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Pedodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-child"></i>
+                                            <p>
+                                                <atr data-translation="pedo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Periodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-droplet"></i>
+                                            <p>
+                                                <atr data-translation="perio"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Prosthodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-teeth"></i>
+                                            <p>
+                                                <atr data-translation="prosthesis"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Radiology.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-radiation"></i>
+                                            <p>
+                                                <atr data-translation="radiology"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Public_health.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-book-open-reader"></i>
+                                            <p>
+                                                <atr data-translation="healthEducation"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Maxillofacial.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-user-nurse"></i>
+                                            <p>
+                                                <atr data-translation="maxillo"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Dental_Implantology.html">
+                                        <div class="hms-item">
+                                            <i class="fas fa-user-nurse"></i>
+                                            <p>
+                                                <atr data-translation="implant"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Pathology.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-microscope"></i>
+                                            <p>
+                                                <atr data-translation="pathology"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                                    <a href="../html/sector_Orthodontics.html">
+                                        <div class="hms-item">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <p>
+                                                <atr data-translation="ortho"></atr>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="units-and-hospitals">
+                        <a href="../html/centers.html">
+                            <div class="units-and-hospitals-item">
+                                <h5>
+                                    <atr data-translation="goTo"></atr>
+                                    <atr data-translation="centers"></atr>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="PADHAFooter"></div>
+
+
+</body>
+<script>
+    window.onload = function ()
+    {
+        document.getElementById('protUnitsFilter').click();
+    };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+<div id="PADHAJS"></div>
+
+<script src="../js/NavBars.js"></script>
+<script src="../js/arabic.js" type="module"></script>
+<script src="../js/main.js"></script>
+<script src="../js/specialists.js"></script>
+
+</html>
